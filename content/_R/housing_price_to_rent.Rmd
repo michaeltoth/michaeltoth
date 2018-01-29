@@ -1,0 +1,68 @@
+---
+title: Price to Rent Ratios Around the Country
+author: Michael Toth
+date: 2017-06-26
+category: R
+tags: R, Housing, Mortgage, Economics
+summary: An analysis of price-to-rent ratios, typically used to assess the buy-vs-rent tradeoff, around the United States
+output: html_document
+status: draft
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(hrbrthemes)
+library(gganimate)
+library(scales)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load}
+
+prices <- read_csv('~/Downloads/Metro_Zhvi_AllHomes.csv')
+rents <- read_csv('~/Downloads/Metro_Zri_AllHomesPlusMultifamily.csv')
+
+# The SizeRank field is slightly different across datasets, though still valuable. I'm going to arbitrarily select the SizeRank from the prices data to keep
+prices <- prices %>% gather(Month, Price, c(4:ncol(prices)))
+rents <- rents %>% gather(Month, Rent, c(4:ncol(rents)))
+
+# Remove any entries where we do not have both pricing and rent data
+housing <- merge(prices, rents, sort = F) %>% filter(!is.na(Price), !is.na(Rent)) %>% mutate(PriceToRent = Price / (Rent * 12))
+
+housing_201612 <- filter(housing, Month == '2016-12', SizeRank <= 500) 
+
+ggplot(housing_201612, aes(x = Price, y = Rent)) + geom_point()
+
+filter(housing_201612, Price <= 250000, PriceToRent < 10)
+
+
+
+p1 <- ggplot(housing, aes(x = Price, y = Rent, frame = Month)) + 
+  geom_point() +
+  scale_y_continuous(name = 'Median Monthly Rent', labels = dollar) +
+  scale_x_continuous(name = 'Median Home Price', labels = dollar) +
+  labs(title = 'Relationship between Home Price 
+and Monthly Rent: ',
+       caption = 'Source: michaeltoth.me
+       Data: Zillow Research Home Value Index and Zillow Rental Index Time Series Data
+       https://www.zillow.com/research/data/') +
+  theme_ipsum()
+gganimate(p1, interval = 0.2)
+gganimate(p1, "price-versus-rent.gif", interval = 0.2)
+
+p2 <- ggplot(housing, aes(x = Price, y = PriceToRent, frame = Month)) + 
+  geom_point() +
+  scale_y_continuous(name = 'Price-to-Annual-Rent Ratio') +
+  scale_x_continuous(name = 'Median Home Price', labels = dollar) +
+  labs(title = 'Relationship between Home Price 
+and Price-to-Rent Ratio:',
+       caption = 'Source: michaeltoth.me
+       Data: Zillow Research Home Value Index and Zillow Rental Index Time Series Data
+       https://www.zillow.com/research/data/') +
+  theme_ipsum()
+gganimate(p2, 'price-versus-ptr.gif', interval = 0.2)
+```
+
+```{r todo}
+# Split out by BEA Region
+```
