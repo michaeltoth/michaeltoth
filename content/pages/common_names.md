@@ -7,5 +7,5 @@ For more information on this project and a detailed write-up, check out my [blog
 <br>
 <br>
 
-<iframe src="http://www.michaeltoth.me/shiny/census_names/top10/" style="border: none; width: 100%; height: 400px"></iframe>
+<iframe src="https://www.michaeltoth.me/shiny/census_names/top10/" style="border: none; width: 100%; height: 400px"></iframe>
 
