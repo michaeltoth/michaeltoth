@@ -1,7 +1,7 @@
 Title: Projects
 Date: 2016-03-13 15:00
 
-Check out the links below for a sample of some projects I've worked on. The current list of projects here were written in Javascript. I will also be using this area to include some d3 visualizations, shiny apps, and data projects as I develop them. You can also find some analyses on my [blog](..) that may not be included below, so be sure to check there as well! If you have an interesting project idea, definitely reach out and let me know about it!  
+I enjoy experimenting with different technologies to create useful and entertaining projects. This page contains a sample of some of the projects I've created. Mostly these are applications created in Javascript and with the Shiny package of the R programming language.  
 
 <style>
 
