@@ -1,5 +1,9 @@
 ---
-title: "You need to start branding your graphs. Here's how to do that with ggplot"
+title: You Need to Start Branding Your Graphs. Here's How, with ggplot! 
+author: Michael Toth
+date: 2019-02-27
+category: R
+tags: R, Branding, How To 
 output: html_document
 ---
 
@@ -25,7 +29,7 @@ Have you ever seen a graph that looks like this? Of course you have! This is the
 &nbsp;
 <center>
 
-![](https://fivethirtyeight.com/wp-content/uploads/2014/05/morris-feature-qbweight-chart-3.png){width=500px}
+![FiveThirtyEight Graph](https://fivethirtyeight.com/wp-content/uploads/2014/05/morris-feature-qbweight-chart-3.png){width=500px}
 
 </center>
 &nbsp;
@@ -37,7 +41,7 @@ How about this one?
 &nbsp;
 <center>
 
-![](https://www.economist.com/sites/default/files/imagecache/1280-width/images/2019/02/articles/body/20190216_woc346.png){width=300px}
+![Economist Graph](https://www.economist.com/sites/default/files/imagecache/1280-width/images/2019/02/articles/body/20190216_woc346.png){width=300px}
 
 </center>
 &nbsp;
