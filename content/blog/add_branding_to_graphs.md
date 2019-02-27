@@ -49,12 +49,43 @@ I'm going to show you how you can easily change the color palette of a graph and
 
 To start, create a standard ggplot graph like you otherwise would:
 
+
+```r
+library(ggplot2)
+library(hrbrthemes)
+library(magick)
+
+# Create a base graph, similar to what we had above
+p <- ggplot(iris, aes(x = Petal.Width, y = Petal.Length, color = Species)) + 
+    geom_point() +
+    labs(title = 'Branding your ggplot Graphs',
+         subtitle = 'Simple tweaks you can use to boost the impact of your graphs today',
+         x = 'This axis title intentionally left blank',
+         y = 'This axis title intentionally left blank',
+         caption = 'michaeltoth.me / @michael_toth')
+
+p
+```
+
 <img src="/figures/add_branding_to_graphs/create_graph-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 &nbsp;
 
 Once you have your base graph put together, the next step is for you to change the colors to match your company's color palette. I'm going to create a Coca-Cola branded graph for demonstration purposes, but you should substitute in your own company's details here. If you don't know what your company's color palette is, ask somebody from your design or marketing teams to send it to you! Here, I'm using red, black, and gray to match Coca-Cola's color palette. 
 
 Choosing individual colors like I'm doing here works for categorical graphs, but for continuous graphs you'll need to do a bit more work to get a branded color scale. That's a subject for another post, but check out the awesome <a href="https://projects.susielu.com/viz-palette?colors=%255B%2522#1DABE6%22,%22#1C366A%22,%22#C3CED0%22,%22#E43034%22,%22#FC4E51%22,%22#AF060F%22%5D&backgroundColor=%22white%22&fontColor=%22black%22" target="_blank">Viz Palette</a> tool by Elijah Meeks and Susie Lu for a sense of what's possible. As you become more familiar, you can create custom ggplot themes and ggplot color paletes to make this process seamless, but I don't want to get into all of that here, as it can be a bit overwhelming to learn all that at once. 
+
+
+```r
+# Customize the graphs with your company's color palette
+p <- p + scale_color_manual(name = '',
+                            labels = c('Black', 'Red', 'Gray'),
+                            values = c('#000000', '#EC0108', '#ACAEAD')) +
+    theme_ipsum() +
+    theme(plot.title = element_text(color = "#EC0108"),
+          plot.caption = element_text(color = "#EC0108", face = 'bold'))
+
+p
+```
 
 <img src="/figures/add_branding_to_graphs/change_colors-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 &nbsp;
@@ -65,6 +96,14 @@ Finally, let's add your company's logo to the graph for a complete, branded, and
 * *y*: this controls the y-position of where you place the logo. This should be a numeric value between 0 and 1, where 0 represents a position all the way on the bottom of the graph and 1 represents a position all the way on the top.
 * *just*: this is a set of two values, the first corresponding to the horizontal justification and the second corresponding to the vertical justification. With *x* and *y* we chose a position on the grid to place the logo. *just* lets us choose how to justify the image at that location. Here, I've selected 'left' and 'bottom' justification, which means that the left bottom corner of the logo will be placed at the x-y coordinates specified.
 * *width*: this scales the logo down to a smaller size so it can be placed on the image. Here, I'm scaling the logo down to a 1-inch size, but the size you'll want will depend on the size of the graph you've created. Play around with different sizes until you find one that feels right.
+
+
+```r
+# Add your company's logo to the graph you created
+logo <- image_read("/Users/michaeltoth/logo.jpg")
+p
+grid::grid.raster(logo, x = 0.07, y = 0.03, just = c('left', 'bottom'), width = unit(1, 'inches'))
+```
 
 <img src="/figures/add_branding_to_graphs/add_logo-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 &nbsp;

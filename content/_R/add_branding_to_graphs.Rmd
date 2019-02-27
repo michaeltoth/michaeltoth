@@ -11,13 +11,13 @@ output: html_document
 library(ggplot2)
 
 knitr::opts_chunk$set(fig.width=8, fig.height=6, fig.align = 'center',
-                      echo=FALSE, warning=FALSE, message=FALSE, dpi=300)
+                      error=FALSE, warning=FALSE, message=FALSE, dpi=300)
 ```
 
 In today's post I want to help you incorporate your company's branding into your ggplot graphs. Why should you care about this? I'm glad you asked!
 
 &nbsp;
-```{r ggplot_base}
+```{r ggplot_base, echo=FALSE}
 ggplot(iris, aes(x = Petal.Width, y = Petal.Length, color = Species)) + 
     geom_point() +
     ggtitle('Base ggplot graph style')
