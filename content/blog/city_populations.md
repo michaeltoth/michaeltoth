@@ -5,7 +5,6 @@ date: 2019-04-04
 category: R
 tags: R, Bar Chart Race, How To 
 output: html_document
-status: draft
 ---
 
 
