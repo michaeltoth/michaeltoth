@@ -1,0 +1,101 @@
+Rank,City,State,Population,Region
+1,New York,New York,"8,175,133",Northeast
+2,Los Angeles,California,"3,792,621",West
+3,Chicago,Illinois,"2,695,598",Midwest
+4,Houston,Texas,"2,099,451",South
+5,Philadelphia,Pennsylvania,"1,526,006",Northeast
+6,Phoenix,Arizona,"1,445,632",West
+7,San Antonio,Texas,"1,327,407",South
+8,San Diego,California,"1,307,402",West
+9,Dallas,Texas,"1,197,816",South
+10,San Jose,California,"945,942",West
+11,Jacksonville,Florida,"821,784",South
+12,Indianapolis,Indiana,"820,445",Midwest
+13,San Francisco,California,"805,235",West
+14,Austin,Texas,"790,390",South
+15,Columbus,Ohio,"787,033",Midwest
+16,Fort Worth,Texas,"741,206",South
+17,Louisville,Kentucky,"741,096",South
+18,Charlotte,North Carolina,"731,424",South
+19,Detroit,Michigan,"713,777",Midwest
+20,El Paso,Texas,"649,121",South
+21,Memphis,Tennessee,"646,889",South
+22,Baltimore,Maryland,"620,961",South
+23,Boston,Massachusetts,"617,594",Northeast
+24,Seattle,Washington,"608,660",West
+25,Washington,District of Columbia,"601,723",South
+26,Nashville,Tennessee,"601,222",South
+27,Denver,Colorado,"600,158",West
+28,Milwaukee,Wisconsin,"594,833",Midwest
+29,Portland,Oregon,"583,776",West
+30,Las Vegas,Nevada,"583,756",West
+31,Oklahoma City,Oklahoma,"579,999",South
+32,Albuquerque,New Mexico,"545,852",West
+33,Tucson,Arizona,"520,116",West
+34,Fresno,California,"494,665",West
+35,Sacramento,California,"466,488",West
+36,Long Beach,California,"462,257",West
+37,Kansas City,Missouri,"459,787",Midwest
+38,Mesa,Arizona,"439,041",West
+39,Virginia Beach,Virginia,"437,994",South
+40,Atlanta,Georgia,"420,003",South
+41,Colorado Springs,Colorado,"416,427",West
+42,Omaha,Nebraska,"408,958",Midwest
+43,Raleigh,North Carolina,"403,892",South
+44,Miami,Florida,"399,457",South
+45,Cleveland,Ohio,"396,815",Midwest
+46,San Juan,Puerto Rico,"395,326",
+47,Tulsa,Oklahoma,"391,906",South
+48,Oakland,California,"390,724",West
+49,Minneapolis,Minnesota,"382,578",Midwest
+50,Wichita,Kansas,"382,368",Midwest
+51,Arlington,Texas,"365,438",South
+52,Bakersfield,California,"347,483",West
+53,New Orleans,Louisiana,"343,829",South
+54,Honolulu,Hawaii,"337,256",West
+55,Anaheim,California,"336,265",West
+56,Tampa,Florida,"335,709",South
+57,Aurora,Colorado,"325,078",West
+58,Santa Ana,California,"324,528",West
+59,Saint Louis,Missouri,"319,294",Midwest
+60,Pittsburgh,Pennsylvania,"305,704",Northeast
+61,Corpus Christi,Texas,"305,215",South
+62,Riverside,California,"303,871",West
+63,Cincinnati,Ohio,"296,943",Midwest
+64,Lexington,Kentucky,"295,803",South
+65,Anchorage,Alaska,"291,826",West
+66,Stockton,California,"291,707",West
+67,Toledo,Ohio,"287,208",Midwest
+68,Saint Paul,Minnesota,"285,068",Midwest
+69,Newark,New Jersey,"277,140",Northeast
+70,Greensboro,North Carolina,"269,666",South
+71,Buffalo,New York,"261,310",Northeast
+72,Plano,Texas,"259,841",South
+73,Lincoln,Nebraska,"258,379",Midwest
+74,Henderson,Nevada,"257,729",West
+75,Fort Wayne,Indiana,"253,691",Midwest
+76,Jersey City,New Jersey,"247,597",Northeast
+77,Saint Petersburg,Florida,"244,769",South
+78,Chula Vista,California,"243,916",West
+79,Norfolk,Virginia,"242,803",South
+80,Orlando,Florida,"238,300",South
+81,Chandler,Arizona,"236,123",West
+82,Laredo,Texas,"236,091",South
+83,Madison,Wisconsin,"233,209",Midwest
+84,Winston-Salem,North Carolina,"229,617",South
+85,Lubbock,Texas,"229,573",South
+86,Baton Rouge,Louisiana,"229,493",South
+87,Durham,North Carolina,"228,330",South
+88,Garland,Texas,"226,876",South
+89,Glendale,Arizona,"226,721",West
+90,Reno,Nevada,"225,221",West
+91,Hialeah,Florida,"224,669",South
+92,Chesapeake,Virginia,"222,209",South
+93,Scottsdale,Arizona,"217,385",West
+94,North Las Vegas,Nevada,"216,961",West
+95,Irving,Texas,"216,290",South
+96,Fremont,California,"214,089",West
+97,Irvine,California,"212,375",West
+98,Birmingham,Alabama,"212,237",South
+99,Rochester,New York,"210,565",Northeast
+100,San Bernardino,California,"209,924",West

@@ -1,0 +1,101 @@
+Rank,City,State,Population [4],Region (2016) [5]
+1,New York,New York,"7,891,957",Northeast
+2,Chicago,Illinois,"3,620,962",Midwest
+3,Philadelphia,Pennsylvania,"2,071,605",Northeast
+4,Los Angeles,California,"1,970,358",West
+5,Detroit,Michigan,"1,849,568",Midwest
+6,Baltimore,Maryland,"949,708",South
+7,Cleveland,Ohio,"914,808",Midwest
+8,St. Louis,Missouri,"856,796",Midwest
+9,Washington,District of Columbia,"802,178",South
+10,Boston,Massachusetts,"801,444",Northeast
+11,San Francisco,California,"775,357",West
+12,Pittsburgh,Pennsylvania,"676,806",Northeast
+13,Milwaukee,Wisconsin,"637,392",Midwest
+14,Houston,Texas,"596,163",South
+15,Buffalo,New York,"580,132",Northeast
+16,New Orleans,Louisiana,"570,445",South
+17,Minneapolis,Minnesota,"521,718",Midwest
+18,Cincinnati,Ohio,"503,998",Midwest
+19,Seattle,Washington,"467,591",West
+20,Kansas City,Missouri,"456,622",Midwest
+21,Newark,New Jersey,"438,776",Northeast
+22,Dallas,Texas,"434,462",South
+23,Indianapolis,Indiana,"427,173",Midwest
+24,Denver,Colorado,"415,786",West
+25,San Antonio,Texas,"408,442",South
+26,Memphis,Tennessee,"396,000",South
+27,Oakland,California,"384,575",West
+28,Columbus,Ohio,"375,901",Midwest
+29,Portland,Oregon,"373,628",West
+30,Louisville,Kentucky,"369,129",South
+31,San Diego,California,"334,387",West
+32,Rochester,New York,"332,488",Northeast
+33,Atlanta,Georgia,"331,314",South
+34,Birmingham,Alabama,"326,037",South
+35,Saint Paul,Minnesota,"311,349",Midwest
+36,Toledo,Ohio,"303,616",Midwest
+37,Jersey City,New Jersey,"299,017",Northeast
+38,Fort Worth,Texas,"278,778",South
+39,Akron,Ohio,"274,605",Midwest
+40,Omaha,Nebraska,"251,117",Midwest
+41,Long Beach,California,"250,767",West
+42,Miami,Florida,"249,276",South
+43,Providence,Rhode Island,"248,674",Northeast
+44,Dayton,Ohio,"243,872",Midwest
+45,Oklahoma City,Oklahoma,"243,504",South
+46,Richmond,Virginia,"230,310",South
+47,Syracuse,New York,"220,583",Northeast
+48,Norfolk,Virginia,"213,513",South
+49,Jacksonville,Florida,"204,517",South
+50,Worcester,Massachusetts,"203,486",Northeast
+51,Tulsa,Oklahoma,"182,740",South
+52,Salt Lake City,Utah,"182,121",West
+53,Des Moines,Iowa,"177,965",Midwest
+54,Hartford,Connecticut,"177,397",Northeast
+55,Grand Rapids,Michigan,"176,515",Midwest
+56,Nashville,Tennessee,"174,307",South
+57,Youngstown,Ohio,"168,330",Midwest
+58,Wichita,Kansas,"168,279",Midwest
+59,New Haven,Connecticut,"164,443",Northeast
+60,Flint,Michigan,"163,143",Midwest
+61,Springfield,Massachusetts,"162,399",Northeast
+62,Spokane,Washington,"161,721",West
+63,Bridgeport,Connecticut,"158,709",Northeast
+64,Yonkers,New York,"152,798",Northeast
+65,Tacoma,Washington,"143,673",West
+66,Paterson,New Jersey,"139,336",Northeast
+67,Sacramento,California,"137,572",West
+68,Arlington,Virginia,"135,449",South
+69,Albany,New York,"134,995",Northeast
+70,Charlotte,North Carolina,"134,042",South
+71,Gary,Indiana,"133,911",Midwest
+72,Fort Wayne,Indiana,"133,607",Midwest
+73,Austin,Texas,"132,459",South
+74,Chattanooga,Tennessee,"131,041",South
+75,Erie,Pennsylvania,"130,803",Northeast
+76,El Paso,Texas,"130,485",South
+77,Kansas City,Kansas,"129,553",Midwest
+78,Mobile,Alabama,"129,009",South
+79,Evansville,Indiana,"128,636",Midwest
+80,Trenton,New Jersey,"128,009",Northeast
+81,Shreveport,Louisiana,"127,206",South
+82,Baton Rouge,Louisiana,"125,629",South
+83,Scranton,Pennsylvania,"125,536",Northeast
+84,Knoxville,Tennessee,"124,769",South
+85,Tampa,Florida,"124,681",South
+86,Camden,New Jersey,"124,555",Northeast
+87,Cambridge,Massachusetts,"120,740",Northeast
+88,Savannah,Georgia,"119,638",South
+89,Canton,Ohio,"116,912",Midwest
+90,South Bend,Indiana,"115,911",Midwest
+91,Berkeley,California,"113,805",West
+92,Elizabeth,New Jersey,"112,817",Northeast
+93,Fall River,Massachusetts,"111,963",Northeast
+94,Peoria,Illinois,"111,856",Midwest
+95,Wilmington,Delaware,"110,356",South
+96,Reading,Pennsylvania,"109,320",Northeast
+97,New Bedford,Massachusetts,"109,189",Northeast
+98,Corpus Christi,Texas,"108,287",South
+99,Phoenix,Arizona,"106,818",West
+100,Allentown,Pennsylvania,"106,756",Northeast
