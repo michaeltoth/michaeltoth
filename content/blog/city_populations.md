@@ -13,6 +13,7 @@ In my corner of the internet, there's been an explosion over the last several mo
 
 ![center](/figures/city_populations/create_graph-1.gif)
 
+
 ## Motivation for this post
 
 For me, it all started with [this brand value graphic](https://www.youtube.com/watch?v=BQovQUga0VE) that went viral back in February. For a few days, it felt like this thing was everywhere. And as this went viral, data visualization practitioners all started to try their hand at creating new versions of this on their own. One of my favorites was [this bar chart race of world cities](https://observablehq.com/@johnburnmurdoch/bar-chart-race-the-most-populous-cities-in-the-world) created by John Murdoch, who, as far as I can tell, was the person who coined the term bar chart race.
@@ -22,6 +23,7 @@ Of course, I knew that I wanted to try to create a version of this graph in R. A
 Later, I remember reading that Detroit had at a time been among the largest cities in the country. From 1916 to 1944, Detroit was the fourth largest city in the country. Its population peaked at 1.85 million in 1950. Today its population is estimated to be 673,000. The history of Detroit's population in particular was interesting to me. Having grown up Toledo, Ohio, 60 miles south of Detroit, I'd seen the effects of Detroit's dramatic population decrease first-hand. I wanted to see how this story played out in the data, and what other interesting trends would be unearthed.
 
 So when I decided I wanted to create a bar chart race, I knew the subject I was going to study. If you're here to learn how to create a bar chart race in R, you're in the right place! Now, let's get into it!
+
 
 ## Loading packages and data
 
@@ -56,6 +58,7 @@ all_data <- all_data %>% mutate(State = case_when(is.na(State_From_Abbrev) ~ Sta
                                                   TRUE ~ State_From_Abbrev)) %>%
                          select(-State_From_Abbrev)
 ```
+
 
 ## Interpolating missing values between census readings
 
@@ -102,6 +105,7 @@ data <- all_data_interp %>%
     mutate(rank=row_number()) %>%
     filter(rank<=10)
 ```
+
 
 ## Animating the bar chart race in R
 
