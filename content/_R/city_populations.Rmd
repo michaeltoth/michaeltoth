@@ -105,7 +105,7 @@ data <- all_data_interp %>%
 
 ## Animating the bar chart race in R
 
-Finally, we create the graph! This piece of code looks a bit intimadating, but mostly it's formatting for the graph. Much of the core code here comes from [https://github.com/stevejburr/Bar-Chart-Race/blob/master/Final.R](this code by Steve Burr), which was very helpful as I tried to figure out how best to use gganimate for this purpose. The key points to call out:  
+Finally, we create the graph! This piece of code looks a bit intimadating, but mostly it's formatting for the graph. Much of the core code here comes from [This code by Steven Burr](https://github.com/stevejburr/Bar-Chart-Race/blob/master/Final.R), which was very helpful as I tried to figure out how best to use gganimate for this purpose. The key points to call out:  
 
 1. I use geom_tile, not geom_bar as this allows for better transitions within gganimate
 2. The gganimate functions transition_time and ease_aes handle the animation and transition between bars. The settings here worked well for my purposes, but dig into these functions to get an overview of different options
