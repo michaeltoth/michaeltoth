@@ -102,7 +102,7 @@ Finally, let's add your company's logo to the graph for a complete, branded, and
 
 ```{r add_logo}
 # Add your company's logo to the graph you created
-logo <- image_read("/Users/michaeltoth/logo.jpg")
+logo <- image_read("~/dev/michaeltoth/output/images/logo.jpg")
 p
 grid::grid.raster(logo, x = 0.07, y = 0.03, just = c('left', 'bottom'), width = unit(1, 'inches'))
 ```
