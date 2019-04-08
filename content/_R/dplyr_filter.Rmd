@@ -1,0 +1,217 @@
+---
+title: How to Filter in R: A Detailed Introduction to the dplyr Filter Function
+author: Michael Toth
+date: 2019-04-08
+category: R
+tags: R, dplyr, filter, How To
+output: html_document
+status: draft
+---
+
+Data wrangling. It's the process of getting your raw data transformed into a format that's easier to work with for analysis. 
+
+It's not the sexiest or the most exciting work. 
+
+In our dreams, all datasets come to us perfectly formatted and ready for all kinds of sophisticated analysis! In real life, not so much. 
+
+It's estimated that as much as 75% of a data scientist's time is spent data wrangling. To be an effective data scientist, you need to be good at this, and you need to be FAST.
+
+One of the most basic data wrangling tasks is filtering data. Starting from a large dataset, and reducing it to a smaller, more manageable dataset, based on some criteria. 
+
+Think of filtering your sock drawer by color, and pulling out only the black socks. 
+
+Whenever I need to filter in R, I turn to the `dplyr filter` function.
+
+As is often the case in programming, there are many ways to filter in R. But the `dplyr filter` function is by far my favorite, and it's the method I use the vast majority of the time.
+
+Why do I like it so much? It has a user-friendly syntax, is easy to work with, and it plays very nicely with the other dplyr functions.
+
+
+## A brief introduction to dplyr
+
+Before I go into detail on the `dplyr filter` function, I want to briefly introduce dplyr as a whole to give you some context. 
+
+dplyr is a cohesive set of data manipulation functions that will help make your data wrangling as painless as possible. 
+
+dplyr, at its core, consists of 5 functions, all serving a distinct data wrangling purpose:
+
+* `filter()` selects rows based on their values
+* `mutate()` creates new variables
+* `select()` picks columns by name
+* `summarise()` calculates summary statistics
+* `arrange()` sorts the rows
+
+The beauty of dplyr is that the syntax of all of these functions is very similar, and they all work together nicely. 
+
+If you master these 5 functions, you'll be able to handle nearly any data wrangling task that comes your way. But we need to tackle them one at a time, so now: let's learn to filter in R using dplyr!
+
+
+## Loading Our Data
+
+In this post, I'll be using the `diamonds` dataset, a dataset built into the ggplot package, to illustrate the best use of the `dplyr filter` function. To start, let's take a look at the data:
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(error=FALSE, warning=FALSE, message=FALSE)
+```
+
+```{r diamonds}
+library(dplyr)
+library(ggplot2)
+
+diamonds
+```
+
+We can see that the dataset gives characteristics of individual diamonds, including their carat, cut, color, clarity, and price. 
+
+
+## Our First dplyr Filter Operation
+
+I'm a big fan of learning by doing, so we're going to dive in right now with our first `dplyr filter` operation.
+
+From our `diamonds` dataset, we're going to filter only those rows where the diamond cut is 'Ideal':
+
+```{r first_filter}
+filter(diamonds, cut == 'Ideal')
+```
+
+As you can see, every diamond in the returned data frame is showing a cut of 'Ideal'. It worked! We'll cover exactly what's happening here in more detail, but first let's briefly review how R works with logical and relational operators, and how we can use those to efficiently filter in R.
+
+
+## A brief aside on logical and relational operators in R and dplyr
+
+In dplyr, filter takes in 2 arguments:  
+
+* The dataframe you are operating on  
+* A conditional expression that evaluates to `TRUE` or `FALSE`  
+
+In the example above, we specified `diamonds` as the dataframe, and `cut == 'Ideal'` as the conditional expression
+
+Conditional expression? What am I talking about?
+
+Under the hood, `dplyr filter` works by testing each row against your conditional expression and mapping the results to `TRUE` and `FALSE`. It then selects all rows that evaluate to `TRUE`. 
+
+In our first example above, we checked that the diamond cut was Ideal with the conditional expression `cut == 'Ideal'`. For each row in our data frame, dplyr checked whether the column `cut` was set to `'Ideal'`, and returned only those rows where `cut == 'Ideal'` evaluated to `TRUE`. 
+
+In our first filter, we used the operator `==` to test for equality. That's not the only way we can use dplyr to filter our data frame, however. We can use a number of different **relational operators** to filter in R.
+
+**Relational operators** are used to compare values. In R generally (and in dplyr specifically), those are:
+
+* `==` (Equal to)
+* `!=` (Not equal to)
+* `<`  (Less than)
+* `<=` (Less than or equal to)
+* `>`  (Greater than)
+* `>=` (Greater than or equal to)
+
+These are standard mathematical operators you're used to, and they work as you'd expect. One quick note: make sure you use the double equals sign (`==`) for comparisons! By convention, a single equals sign (`=`) is used to assign a value to a variable, and a double equals sign (`==`) is used to check whether two values are equal. Using a single equals sign will often give an error message that is not intuitive, so make sure you check for this common error!
+
+dplyr can also make use of the following **logical operators** to string together multiple different conditions in a single `dplyr filter` call!
+
+* `!` (logical NOT)
+* `&` (logical AND)
+* `|` (logical OR)
+
+There are two additional operators that will often be useful when working with dplyr to filter:
+
+* `%in%`    (Checks if a value is in an array of multiple values)
+* `is.na()` (Checks whether a value is NA)
+
+In our first example above, we tested for equality when we said `cut == 'Ideal'`. Now, let's expand our capabilities with different relational parameters in our filter:
+
+```{r greater_than}
+filter(diamonds, price > 2000)
+```
+
+Here, we select only the diamonds where the price is greater than 2000.
+
+```{r not_equal}
+filter(diamonds, cut != 'Ideal')
+```
+
+And here, we select all the diamonds whose cut is NOT equal to 'Ideal'. Note that this is the exact opposite of what we filtered before. 
+
+You can use `<`, `>`, `<=`, `>=`, `==`, and `!=` in similar ways to filter your data. Try a few examples on your own to get comfortable with the different filtering options!
+
+
+## A note on storing your results
+
+By default, dplyr filter will perform the operation you ask and then print the result to the screen. If you prefer to store the result in a variable, you'll need to assign it as follows:
+
+```{r first_filter_store}
+e_diamonds <- filter(diamonds, color == 'E')
+```
+
+Note that you can also overwrite the dataset (that is, assign the result back to the `diamonds` data frame) if you don't want to retain the unfiltered data. In this case I want to keep it, so I'll store this result in `e_diamonds`. In any case, it's always a good idea to preview your `dplyr filter` results before you overwrite any data!
+
+
+## Filtering Numeric Variables
+
+Numeric variables are the quantitative variables in a dataset. In the diamonds dataset, this includes the variables carat and price, among others. When working with numeric variables, it is easy to filter based on ranges of values. For example, if we wanted to get any diamonds priced between 1000 and 1500, we could easily filter as follows:
+
+```{r filter_price_range}
+filter(diamonds, price >= 1000 & price <= 1500)
+```
+
+In general, when working with numeric variables, you'll most often make use of the inequality operators, `>`, `<`, `>=`, and `<=`. While it is possible to use the `==` and `!=` operators with numeric variables, I generally recommend against it. 
+
+The issue with using `==` is that it will only return true of the value is exactly equal to what you're testing for. If the dataset you're testing against consists of integers, this is possible, but if you're dealing with decimals, this will often break down. For example, `1.0100000001 == 1.01` will evaluate to `FALSE`. This is technically true, but it's easy to get into trouble with decimal precision. I never use `==` when working with numerical variables unless the data I am working with consists of integers only!
+
+
+## Filtering Categorical Variables
+
+Categorical variables are non-quantitative variables. In our example dataset, the columns cut, color, and clarity are categorical variables. In contrast to numerical variables, the inequalities `>`, `<`, `>=` and `<=` have no meaning here. Instead, you'll make frequent use of the `==`, `!=`, and `%in%` operators when filtering categorical variables. 
+
+Above, we filtered the dataset to include only the diamonds whose cut was Ideal using the `==` operator. Let's say that we wanted to expand this filter to also include diamonds where the cut is Premium. To accomplish this, we would use the `%in%` operator:
+
+```{r filter_in}
+filter(diamonds, cut %in% c('Ideal', 'Premium'))
+```
+
+How does this work? First, we create a vector of our desired cut options, `c('Ideal', 'Premium')`. Then, we use %in% to filter only those diamonds whose cut is in that vector. dplyr will filter out BOTH those diamonds whose cut is Ideal AND those diamonds whose cut is Premium. The vector you check against for the %in% function can be arbitrarily long, which can be very useful when working with categorical data. 
+
+It's also important to note that the vector can be defined before you perform the dplyr filter operation:
+
+```{r filter_in_from_vector}
+cuts_to_include <- c('Good', 'Very Good', 'Ideal', 'Premium')
+filter(diamonds, cut %in% cuts_to_include)
+```
+
+This helps to increase the readability of your code when you're filtering against a larger set of potential options. This also means that if you have an existing vector of options from another source, you can use this to filter your dataset. This can come in very useful as you start working with multiple datasets in a single analysis!
+
+## Chaining together multiple filtering operations with logical operators
+
+The real power of the dplyr filter function is in its flexibility. Using the logical operators &, |, and !, we can group many filtering operations in a single command to get the exact dataset we want!
+
+Let's say we want to select all diamonds where the cut is Ideal and the carat is greater than 1:
+
+```{r and_operator}
+filter(diamonds, cut == 'Ideal' & carat > 1)
+```
+
+BOTH conditions must evaluate to `TRUE` for the data to be selected. That is, the cut must be Ideal, and the carat must be greater than 1. 
+
+You don't need to limit yourself to two conditions either. You can have as many as you want! Let's say we also wanted to make sure the color of the diamond was E. We can extend our example:
+
+```{r and_operator_3}
+filter(diamonds, cut == 'Ideal' & carat > 1 & color == 'E')
+```
+
+What if we wanted to select rows where the cut is ideal OR the carat is greater than 1? Then we'd use the | operator!
+
+```{r or_operator}
+filter(diamonds, cut == 'Ideal' | carat > 1)
+```
+
+Any time you want to filter your dataset based on some combination of logical statements, this is possibly using the `dplyr filter` function and R's built-in logical parameters. You just need to figure out how to combine your logical expressions to get exactly what you want!
+
+## Conclusion
+
+`dplyr filter` is one of my most-used functions in R in general, and especially when I am looking to filter in R. With this article you should have a solid overview of how to filter a dataset, whether your variables are numerical, categorical, or a mix of both. Practice what you learned right now to make sure you cement your understanding of how to effectively filter in R using dplyr!
+
+------
+
+Did you find this post useful? I frequently write tutorials like this one to help you learn new skills and improve your data science. If you want to be notified of new tutorials, [sign up here!](http://eepurl.com/gmYioz)
+
+----- 
+
+I help technology companies to leverage their data to produce branded, influential content to share with their clients. I work on everything from investor newsletters to blog posts to research papers. If you enjoy the work I do and are interested in working together, you can visit my <a href="https://www.michaeltothanalytics.com" target="_blank">consulting website</a> or contact me at <a href="mailto:michael@michaeltothanalytics.com">michael@michaeltothanalytics.com</a>!
