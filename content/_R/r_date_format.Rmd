@@ -1,11 +1,10 @@
 ---
-title: An Opinionated Guide to Base R Date Format Functions
+title: The Ultimate Opinionated Guide to Base R Date Format Functions
 author: Michael Toth
 date: 2019-04-09
 category: R
 tags: R, Date
 output: html_document
-status: draft
 ---
 
 ```{r setup, echo=FALSE}

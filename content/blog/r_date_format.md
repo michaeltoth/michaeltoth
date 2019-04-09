@@ -1,11 +1,10 @@
 ---
-title: An Opinionated Guide to Base R Date Format Functions
+title: The Ultimate Opinionated Guide to Base R Date Format Functions
 author: Michael Toth
 date: 2019-04-09
 category: R
 tags: R, Date
 output: html_document
-status: draft
 ---
 
 
@@ -233,7 +232,7 @@ my_date_time                              # Unformatted datetime
 ```
 
 ```
-## [1] "2019-04-09 13:26:04 EDT"
+## [1] "2019-04-09 13:28:12 EDT"
 ```
 
 ```r
@@ -249,7 +248,7 @@ format(my_date_time, '%B %d %Y %H:%M')    # Datetime format 'April 09 1989 12:14
 ```
 
 ```
-## [1] "April 09 2019 13:26"
+## [1] "April 09 2019 13:28"
 ```
 
 ```r
@@ -257,7 +256,7 @@ format(my_date_time, '%H:%M on %B %d %Y') # Datetime format '12:14 on April 09 1
 ```
 
 ```
-## [1] "13:26 on April 09 2019"
+## [1] "13:28 on April 09 2019"
 ```
 
 There we have it! You should now be able to easily perform nearly any date operation you need in R. You can take character strings and convert them to dates using the `as.POSIXct()` and `as.Date()` R functions. You can also take date or datetime objects and use the `format()` function to clean them up for publication-ready graphs and papers! 
