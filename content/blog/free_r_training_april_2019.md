@@ -5,7 +5,6 @@ date: 2019-04-10
 category: R
 tags: R, Training
 output: html_document
-status: draft
 ---
 
 I run this blog because I want to help you learn to be a better R user! But in order to do that, I need to know more about where you are in your journey and the kinds of problems you're facing. 
