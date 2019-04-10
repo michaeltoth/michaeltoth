@@ -44,7 +44,7 @@ Some of the links on this page are affiliate links. An affiliate link means I ma
     <ul id="book-list">
         <li class="book-list-element">
             <a href='https://amzn.to/2G6Bvfy' class="list-link">
-                <img src='../images/books/r-for-data-science.png' />
+                <img src='../images/books/r-for-data-science.png' width="200"/>
                 <h3>R for Data Science</h3> 
                 <h5>Hadley Wickham and Garrett Grolemund</h5>
                 <p>Good Book</p>
@@ -54,7 +54,7 @@ Some of the links on this page are affiliate links. An affiliate link means I ma
         </li>
         <li class="book-list-element">
             <a href='https://amzn.to/2UabBN8' class="list-link">
-                <img src='../images/books/an-introduction-to-statistical-learning.jpg' />
+                <img src='../images/books/an-introduction-to-statistical-learning.jpg' width="200"/>
                 <h3>An Introduction to Statistical Learning</h3> 
                 <h5>Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani</h5>
                 <p>Good Book</p>
@@ -64,7 +64,7 @@ Some of the links on this page are affiliate links. An affiliate link means I ma
         </li>
         <li class="book-list-element">
             <a href='https://amzn.to/2KquXhd' class="list-link">
-                <img src='../images/books/storytelling-with-data.jpeg' />
+                <img src='../images/books/storytelling-with-data.jpeg' width="200"/>
                 <h3>Storytelling with Data</h3> 
                 <h5>Cole Nussbaumer Knaflic</h5>
                 <p>Good Book</p>
@@ -73,7 +73,7 @@ Some of the links on this page are affiliate links. An affiliate link means I ma
         </li>
         <li class="book-list-element">
             <a href='https://amzn.to/2UtV23K' class="list-link">
-                <img src='../images/books/the-visual-display-of-quantitative-information.jpg' />
+                <img src='../images/books/the-visual-display-of-quantitative-information.jpg' width="200"/>
                 <h3>The Visual Display of Quantitative Information</h3> 
                 <h5>Edward R. Tufte</h5>
                 <p>Good Book</p>
