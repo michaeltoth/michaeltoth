@@ -9,7 +9,7 @@ output: html_document
 
 I run this blog because I want to help you learn to be a better R user! But in order to do that, I need to know more about where you are in your journey and the kinds of problems you're facing. 
 
-So, I'm excited to announce that over the next two weeks I am going to be offering **10 free 45-minute R training sessions!** You come to me with a problem, and we'll work together over a screen sharing session to solve it using R!
+So, I'm excited to announce that over the next two weeks I am going to be offering **free one-on-one 45-minute R training sessions to 10 people!** You come to me with a problem, and we'll work together over a screen sharing session to solve it using R!
 
 Would it be helpful to spend 45 minutes with me and receive personalized advice on solving your R problems? Then please [contact me here]({filename}../pages/contact.md) and give me some details about the project you'd like me to help with! 
 
