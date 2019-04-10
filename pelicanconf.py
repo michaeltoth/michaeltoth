@@ -46,8 +46,6 @@ MENUITEMS = (('Archives', '/archives.html'),
             ('Categories', '/categories.html'),
 	    ('Tags', '/tags.html'),)
 
-LINKS = (('Subscribe', 'http://eepurl.com/gmYioz'),
-	 ('My Artwork', 'http://www.artfuldataprints.com'),
-         ('Work With Me', 'https://www.michaeltothanalytics.com'))
+LINKS = (('Subscribe', 'http://eepurl.com/gmYioz'))
 
 DEFAULT_PAGINATION = 10
