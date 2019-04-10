@@ -46,6 +46,6 @@ MENUITEMS = (('Archives', '/archives.html'),
             ('Categories', '/categories.html'),
 	    ('Tags', '/tags.html'),)
 
-LINKS = (('Subscribe', 'http://eepurl.com/gmYioz'))
+LINKS = (('Subscribe', 'http://eepurl.com/gmYioz'),)
 
 DEFAULT_PAGINATION = 10
