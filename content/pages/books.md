@@ -10,7 +10,7 @@ ul#book-list {
 }
 
 li.book-list-element {
-  padding: 50px;
+  padding: 25px;
   overflow: auto;
 }
 
@@ -22,11 +22,11 @@ li:hover.book-list-element {
 li.book-list-element img {
   float: left;
   margin: 0 15px 0 0;
-  width: 20%;
+  width: 35%;
 }
 
 li.book-list-element h3 {
-  margin: 0 0 25px 0;
+  margin: 0 0 10px 0;
 }
 
 a.list-link {
@@ -47,7 +47,7 @@ Some of the links on this page are affiliate links. An affiliate link means I ma
             <a href='https://amzn.to/2G6Bvfy' class="list-link">
                 <img src='../images/books/r-for-data-science.png' />
                 <h3>R for Data Science</h3> 
-                <h5>Hadley Wickham and Garrett Grolemund</h5>
+                <h6>Hadley Wickham and Garrett Grolemund</h6>
                 <p>Good Book</p>
                 <p><a href='https://r4ds.had.co.nz/'>Read Online for Free</a></p>
                 <p><a href='https://amzn.to/2G6Bvfy'>Purchase on Amazon</a></p>
@@ -57,7 +57,7 @@ Some of the links on this page are affiliate links. An affiliate link means I ma
             <a href='https://amzn.to/2UabBN8' class="list-link">
                 <img src='../images/books/an-introduction-to-statistical-learning.jpg' />
                 <h3>An Introduction to Statistical Learning</h3> 
-                <h5>Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani</h5>
+                <h6>Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani</h6>
                 <p>Good Book</p>
                 <p><a href='https://www-bcf.usc.edu/~gareth/ISL/'>Read Online for Free</a></p>
                 <p><a href='https://amzn.to/2UabBN8'>Purchase on Amazon</a></p>
@@ -67,7 +67,7 @@ Some of the links on this page are affiliate links. An affiliate link means I ma
             <a href='https://amzn.to/2KquXhd' class="list-link">
                 <img src='../images/books/storytelling-with-data.jpeg' />
                 <h3>Storytelling with Data</h3> 
-                <h5>Cole Nussbaumer Knaflic</h5>
+                <h6>Cole Nussbaumer Knaflic</h6>
                 <p>Good Book</p>
                 <p><a href='https://amzn.to/2KquXhd'>Purchase on Amazon</a></p>
             </a>
@@ -76,7 +76,7 @@ Some of the links on this page are affiliate links. An affiliate link means I ma
             <a href='https://amzn.to/2UtV23K' class="list-link">
                 <img src='../images/books/the-visual-display-of-quantitative-information.jpg' />
                 <h3>The Visual Display of Quantitative Information</h3> 
-                <h5>Edward R. Tufte</h5>
+                <h6>Edward R. Tufte</h6>
                 <p>Good Book</p>
                 <p><a href='https://amzn.to/2UtV23K'>Purchase on Amazon</a></p>
             </a>
