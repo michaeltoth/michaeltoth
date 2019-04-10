@@ -6,7 +6,7 @@ Status: hidden
 ul#book-list {
   list-style-type: none; 
   margin-left: -40px;
-  width: 600px;
+  width: 100%;
 }
 
 li.book-list-element {
