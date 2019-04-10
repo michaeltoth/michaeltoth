@@ -22,10 +22,18 @@ li:hover.book-list-element {
 li.book-list-element img {
   float: left;
   margin: 0 15px 0 0;
-  width: 35%;
+  width: 30%;
 }
 
 li.book-list-element h3 {
+  margin: 0 0 10px 0;
+}
+
+li.book-list-element h6 {
+  margin: 0 0 10px 0;
+}
+
+li.book-list-element p {
   margin: 0 0 10px 0;
 }
 
