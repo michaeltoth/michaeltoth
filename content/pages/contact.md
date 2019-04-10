@@ -6,8 +6,18 @@ Can I help you tackle an R challenge you're facing? Fill out the form below with
 
 input {
   display: block;
-  line-height: 2em;
-  padding: 5px 5px 5px 5px;
+  line-height: 3em;
+  padding: 10px;
+  margin: 10px;
+}
+
+textarea {
+  display: block;
+  line-height: 3em;
+  padding: 10px;
+  margin: 10px;
+  rows: 6;
+  columns: 50;
 }
 
 </style>
