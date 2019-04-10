@@ -1,13 +1,85 @@
 Title: Books
 Status: hidden
 
+<style>
+
+ul#book-list {
+  list-style-type: none; 
+  margin-left: -40px;
+  width: 600px;
+}
+
+li.book-list-element {
+  padding: 10px;
+  overflow: auto;
+}
+
+li:hover.book-list-element {
+  background: #eee;
+  cursor: pointer;
+}
+
+li.book-list-element img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+li.book-list-element h3 {
+  margin: 0 0 25px 0;
+}
+
+a.list-link {
+  color: inherit;
+}
+
+</style>
+
 In a culture increasingly driven by quick hits of information on social media sites like Twitter and Facebook, I am a strong believer in the value of dedicating long chunks of time to digest information from a single source. I spend a good amount of my time reading every day, and I think that this makes me a better programmer, a more nuanced thinker, and a more well rounded person.
 
 In this page I'm including a list of books that have influenced my programming skills and my thinking. Primarily these are programming books and business books. I also am including a list of books I am currently reading.
 
 Some of the links on this page are affiliate links. An affiliate link means I may earn a commission if you make a purchase through my link, *without any extra cost to you*. It helps me keep this blog running. Thank you for your support.
 
-R for data science: https://www.amazon.com/gp/product/1491910399/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=michaeltoth-20&creative=9325&linkCode=as2&creativeASIN=1491910399&linkId=ff6f1fe9c08996cef94af657fb6c1bd1
+<div>
+    <ul id="book-list">
+        <li class="book-list-element">
+            <a href='https://amzn.to/2G6Bvfy' class="list-link">
+                <img src='../images/name_popularity_thumb.png' />
+                <h3>R for Data Science</h3> 
+                <h5>Hadley Wickham and Garrett Grolemund</h5>
+                <p>Good Book</p>
+                <a href='https://r4ds.had.co.nz/'>Read Online for Free</a>
+                <a href='https://amzn.to/2G6Bvfy'>Purchase on Amazon</a>
+            </a>
+        </li>
+        <li class="book-list-element">
+            <a href='https://amzn.to/2UabBN8' class="list-link">
+                <img src='../images/name_popularity_thumb.png' />
+                <h3>Introduction to Statistical Learning</h3> 
+                <h5>Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani</h5>
+                <p>Good Book</p>
+                <a href='https://www-bcf.usc.edu/~gareth/ISL/'>Read Online for Free</a>
+                <a href='https://amzn.to/2UabBN8'>Purchase on Amazon</a>
+            </a>
+        </li>
+        <li class="book-list-element">
+            <a href='https://amzn.to/2KquXhd' class="list-link">
+                <img src='../images/name_popularity_thumb.png' />
+                <h3>Storytelling with Data</h3> 
+                <h5>Cole Nussbaumer Knaflic</h5>
+                <p>Good Book</p>
+                <a href='https://amzn.to/2KquXhd'>Purchase on Amazon</a>
+            </a>
+        </li>
+        <li class="book-list-element">
+            <a href='https://amzn.to/2UtV23K' class="list-link">
+                <img src='../images/name_popularity_thumb.png' />
+                <h3>The Visual Display of Quantitative Information</h3> 
+                <h5>Edward R. Tufte</h5>
+                <p>Good Book</p>
+                <a href='https://amzn.to/2UtV23K'>Purchase on Amazon</a>
+            </a>
+        </li>
 
-Introduction to Statistical Learning
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=michaeltoth-20&language=en_US&marketplace=amazon&region=US&placement=1461471370&asins=1461471370&linkId=fb51d984b0f34347d756b6b8989ae478&show_border=true&link_opens_in_new_window=true"></iframe>
+    </ul>
+</div>
