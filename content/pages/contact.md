@@ -15,8 +15,8 @@ textarea {
   display: block;
   padding: 10px;
   margin: 10px 10px 10px 0px;
-  rows: 6;
-  columns: 100;
+  width: 300px;
+  height: 150px;
 }
 
 </style>
@@ -27,7 +27,7 @@ textarea {
 
   <input type="email" name="email" placeholder="Your Email (Required)">  
 
-  <textarea name="message" placeholder="What Can I Help You With?"></textarea>  
+  <textarea name="message" placeholder="What Can I Help You With?" rows="4" cols="50"></textarea>  
 
   <button type="submit">Submit</button>  
 
