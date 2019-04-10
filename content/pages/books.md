@@ -10,7 +10,7 @@ ul#book-list {
 }
 
 li.book-list-element {
-  padding: 25px;
+  padding: 25px 25px 25px 0px;
   overflow: auto;
 }
 
@@ -30,7 +30,7 @@ li.book-list-element h3 {
 }
 
 li.book-list-element h6 {
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
 }
 
 li.book-list-element p {
