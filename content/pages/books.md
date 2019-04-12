@@ -10,7 +10,7 @@ ul#book-list {
 }
 
 li.book-list-element {
-  padding: 25px 25px 25px 0px;
+  padding: 25px 25px 25px 2px;
   overflow: auto;
 }
 
