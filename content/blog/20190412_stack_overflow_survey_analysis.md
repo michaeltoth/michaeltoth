@@ -22,6 +22,8 @@ Since 2011, Stack Overflow has been surveying their users each year to answer qu
 
 This year, nearly 90,000 developers participated in the survey! There's a lot in this survey, and I recommend reviewing it yourself, but I wanted to surface some of the key findings that I thought were particularly relevant to data professionals here.
 
+Stack Overflow says they will be releasing the underlying data for this survey in the coming weeks, so I hope to return to this for a deeper analysis once that's made available. For now, let's get into the results!
+
 ###### Developer Roles
 <p style="text-align:center;"><img src="{filename}/images/20190412_Stack_Overflow/Global_Developer_Roles.png" width="350"></p>
 
@@ -29,7 +31,7 @@ People with all different types of coding backgrounds use Stack Overflow. While 
 
 Globally, 11.7% of Stack Overflow users surveyed identified as database administrators, 7.9% as data scientists or machine learning specialists, 7.7% as data analysts / business analysts, and 7.2% as data engineers. These figures were slightly higher for US-based respondents to the survey.
 
-Note that these figures are not mutually exclusive, as people were able to select multiple options in the survey
+Note that these figures are not mutually exclusive, as people were able to select multiple options in the survey.
 
 ###### United States Average Salaries by Job
 <p style="text-align:center;"><img src="{filename}/images/20190412_Stack_Overflow/US_Average_Salaries_By_Job.png" width="350"></p>
@@ -54,10 +56,9 @@ SQL was by far the most popular data technology, at 54.4%. This is to be expecte
 ###### Undergraduate Major
 <p style="text-align:center;"><img src="{filename}/images/20190412_Stack_Overflow/Training.png" width="400"></p>
 
-While not directly related to analytics, I thought the survey question on I thought the question on undergraduate major was particularly interesting. A massive 62.4% of those surveyed reported studying computer science, computer engineering, or software engineering in undergrad. In undergrad I studied finance and statistics, which came in at 2.4% and 3.9% respectively, quite low on the scale. I wonder how much these figures would differ for data scientists, where fields like economics, statistics, and business seem to be better represented. I hope that when Stack Overflow releases their data for this survey I'll be able to analyze this question more deeply! 
+While not directly related to analytics, I thought the survey question on undergraduate major was particularly interesting. A massive 62.4% of those surveyed reported studying computer science, computer engineering, or software engineering in undergrad. In undergrad I studied finance and statistics, which came in at 2.4% and 3.9% respectively, quite low on the scale here. I wonder how much these figures would differ for data scientists, where fields like economics, statistics, and business seem to be better represented. I hope that when Stack Overflow releases their data for this survey I'll be able to analyze this question more deeply! 
 
 I encourage you to [check out the survey](https://insights.stackoverflow.com/survey/2019) for a bunch of other useful information. There's more information on database usage and machine learning frameworks, as well as general information on work environments, developer satisfaction, and much more!
-
 
 ------
 
