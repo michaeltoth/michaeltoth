@@ -11,10 +11,10 @@ status: draft
 At least globally, that is. According to the [2019 Stack Overflow Developer Survey](https://insights.stackoverflow.com/survey/2019), R users globally reported earning an average of $64k per year, $1k more than the $63k reported by Python developers. In the United States, that situation reverses, with Python programmers earning $116k and R programmers $108k. 
 
 <!--##### Global Average Salaries by Technology-->
-<p style="text-align:center;"><img src="{filename}/images/20190412_Stack_Overflow/Global_Average_Salaries_By_Tech.png" style="float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;></p>
+<p style="text-align:center;"><img src="{filename}/images/20190412_Stack_Overflow/Global_Average_Salaries_By_Tech.png" style="float: left; width: 45%; margin-right: 1%; margin-bottom: 0.5em;"></p>
 
 <!--###### United States Average Salaries by Technology-->
-<p style="text-align:center;"><img src="{filename}/images/20190412_Stack_Overflow/US_Average_Salaries_By_Tech.png" style="float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;></p>
+<p style="text-align:center;"><img src="{filename}/images/20190412_Stack_Overflow/US_Average_Salaries_By_Tech.png" style="float: left; width: 45%; margin-right: 1%; margin-bottom: 0.5em;"></p>
 
 ## The Stack Overflow Developer Survey
 
