@@ -5,6 +5,7 @@ date: 2019-04-12
 category: R
 tags: R, News
 output: html_document
+status: draft
 ---
 
 Globally, R users in the Stack Overflow developer survey report earning $64k per year, $1k more than the $63k reported by Python developers. In the United States, that situation reverses, with Python programmers earning $116k and R programmers $108k. 
