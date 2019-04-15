@@ -78,7 +78,7 @@ as.POSIXct(my_date_time, format = "%m/%d/%Y %H:%M:%S")
 
 Here we had the added the time string `23:40:00` on top of the same date we processed previously. As before, we used the R format specification for this string, `%m/%d/%Y %H:%M:%S`, to convert to a datetime `POSIXct` object.
 
-#### Discarding unnecessarily time data
+#### Discarding unnecessary time data
 
 We'll get more into how these format specifications work in a minute, but first I want to make a quick aside. Sometimes your dates will contain time information, but you won't actually need that for your analysis. This can sometimes be annoying to keep around, and it's often cleaner if you just get rid of it. Luckily, this is quite easy. Instead of using the `as.POSIXct()` function, we can simply use the `as.Date()` function and ignore the trailing timestamp information, as follows:
 
