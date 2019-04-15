@@ -1,5 +1,6 @@
 Title: Projects
 Date: 2016-03-13 15:00
+Status: hidden
 
 I enjoy experimenting with different technologies to create useful and entertaining projects. This page contains a sample of some of the projects I've created. Mostly these are applications created in Javascript and with the Shiny package of the R programming language.  
 

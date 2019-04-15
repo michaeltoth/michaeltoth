@@ -1,5 +1,6 @@
 Title: Published Writing
 Date: 2019-01-08 15:00
+Status: hidden
 
 This page includes links to analytical writing I've published elsewhere on the web, as well as press coverage for pieces I've written. I specialize in writing analytical content that helps technology companies gain credibility, build a following, and win more business. If you like the work I've done here and you're interested in hearing more about my business or how we could work together, you can visit my <a href="https://www.michaeltothanalytics.com" target="_blank">consulting website</a> or contact me at <michael@michaeltothanalytics.com>!
 
