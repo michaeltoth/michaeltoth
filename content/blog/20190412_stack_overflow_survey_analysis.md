@@ -1,7 +1,7 @@
 ---
 title: R Programmers Earn More than Python Programmers
 author: Michael Toth
-date: 2019-04-12
+date: 2019-04-15
 category: R
 tags: R, News
 output: html_document
