@@ -3,13 +3,13 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Michael Toth'
-SITENAME = u"Michael Toth's Blog"
+SITENAME = u"Learn R Programming & Build a Data Science Career | Michael Toth"
 SITETITLE = AUTHOR
 SITESUBTITLE = u'Consulting Data Scientist and Writer'
-SITEDESCRIPTION = u'%s is a data scientist who specializes in writing analytical content that helps financial technology businesses win more customers. This blog hosts Michael\'s thoughts and writings on statistics, data science, programming, finance, and economics' % AUTHOR
+SITEDESCRIPTION = u"Valuable tools, advice, and guides to grow your data science career and learn R programming from someone who's successfully done it before."
 SITEURL = 'http://localhost:8000'
 SITELOGO = SITEURL + '/images/profile.jpeg'
-FAVICON = SITEURL + '/images/favicon.ico' 
+FAVICON = SITEURL + '/images/favicon.ico'
 
 ROBOTS = 'index, follow'
 
