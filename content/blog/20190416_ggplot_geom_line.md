@@ -5,7 +5,6 @@ date: 2019-04-17
 category: R
 tags: R, ggplot, line graph, geom_line
 output: html_document
-status: draft
 summary: Simple line graphs are one of the most powerful ways to convey graphical information. This detailed guide to plotting line graphs in R will teach you how to use with ggplot and geom_line to make your own line graphs in R
 ---
 
