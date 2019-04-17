@@ -1,5 +1,5 @@
 ---
-title: A Datailed Guide to Plotting Line Graphs in R using ggplot's geom_line
+title: A Datailed Guide to Plotting Line Graphs in R using ggplot geom_line
 author: Michael Toth
 date: 2019-04-17
 category: R
