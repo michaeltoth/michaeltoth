@@ -9,16 +9,7 @@ status: draft
 summary: Simple line graphs are one of the most powerful ways to convey graphical information. This detailed guide to plotting line graphs in R will teach you how to use with ggplot and geom_line to make your own line graphs in R
 ---
 
-```{r setup, echo=FALSE}
-knitr::opts_chunk$set(fig.width=5, fig.height=3, fig.align = 'center',
-                      error=FALSE, warning=FALSE, message=FALSE, dpi=300)
 
-# Inelegant solution to font dependency issues
-options(device = function(file, width, height) {
-  png(tempfile(), width = width, height = height)
-})
-
-```
 
 When it comes to data visualization, it can be fun to think of all the flashy and exciting ways to display a dataset. But if you're trying to convey information, flashy isn't always the way to go. 
 
@@ -65,7 +56,8 @@ The dataset contains 3 columns: Tree, age, and cimcumference. There are 7 observ
 
 ## Simple example of ggplot + geom_line()
 
-```{r simple_line}
+
+```r
 library(tidyverse)
 
 # Filter the data we need
@@ -75,6 +67,8 @@ tree_1 <- filter(Orange, Tree == 1)
 ggplot(tree_1) +
     geom_line(aes(x = age, y = circumference))
 ```
+
+<img src="/figures/20190416_ggplot_geom_line/simple_line-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
 Here we are starting with the simplest possible line graph using geom_line. For this simple graph, I chose to only graph the size of the first tree. I used `dplyr` to filter the dataset to only that first tree. 
 If you're not familiar with `dplyr`'s `filter` function, it's my preferred way of subsetting a dataset in R, and I recently wrote an in-depth guide to [dplyr filter](https://michaeltoth.me/how-to-filter-in-r-a-detailed-introduction-to-the-dplyr-filter-function.html) if you'd like to learn more!
@@ -92,7 +86,8 @@ And that's it, we have our line graph!
 
 Expanding on this example, let's now experiment a bit with colors.
 
-```{r color}
+
+```r
 # Filter the data we need
 tree_1 <- filter(Orange, Tree == 1)
 
@@ -101,15 +96,20 @@ ggplot(tree_1) +
     geom_line(aes(x = age, y = circumference), color = 'red')
 ```
 
+<img src="/figures/20190416_ggplot_geom_line/color-1.png" title="center" alt="center" style="display: block; margin: auto;" />
+
 You'll note that this geom_line call is identical to the one before, except that we've added the modifier `color = 'red'` to to end of the line. Experiment a bit with different colors to see how this works on your machine. You can use most color names you can think of, or you can use specific hex colors codes to get more granular.
 
 Now, let's try something a little different. Compare the `ggplot` code below to the code we just executed above. There are 3 differences. See if you can find them and guess what will happen, then scroll down to take a look at the result.
 
-```{r color_aes}
+
+```r
 # Graph different data
 ggplot(Orange) +
     geom_line(aes(x = age, y = circumference, color = Tree))
 ```
+
+<img src="/figures/20190416_ggplot_geom_line/color_aes-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
 This line graph is quite different from the one we produced above, but we only made a few minor modifications to the code! Did you catch the 3 changes? They were:
 
@@ -140,10 +140,13 @@ Effectively, we're telling `ggplot` to use a different color for each tree in ou
 
 Let's look at a related example. This time, instead of changing the color of the line graph, we will change the linetype:
 
-```{r linetype_aes}
+
+```r
 ggplot(Orange) +
     geom_line(aes(x = age, y = circumference, linetype = Tree))
 ```
+
+<img src="/figures/20190416_ggplot_geom_line/linetype_aes-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
 This `ggplot + geom_line()` call is identical to the one we just reviewed, except we've substituted `linetype` for `color`. The graph produced is quite similar, but it uses different linetypes instead of different colors in the graph. You might consider using something like this when printing in black and white, for example.
 
@@ -179,10 +182,13 @@ The `group` mapping allows us to map a variable to different groups. Within `geo
 
 ##### Changing the `group` aesthetic mapping in `ggplot + geom_line`
 
-```{r group_aes}
+
+```r
 ggplot(Orange) +
     geom_line(aes(x = age, y = circumference, group = Tree))
 ```
+
+<img src="/figures/20190416_ggplot_geom_line/group_aes-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
 You'll note that the 5 lines are separated as before, but the lines are all black and there is no legend differentiating them. Depending on the data you're working with, this may or may not be appropriate. It's up to *you* as the person familiar with the data to determine how best to represent it in graph form!
 
@@ -195,20 +201,26 @@ Keep this in mind as we review the next two aesthetics. While these aesthetics a
 
 ##### Changing transparency in `ggplot + geom_line` with the `alpha` aesthetic
 
-```{r alpha_aes}
+
+```r
 ggplot(Orange) +
     geom_line(aes(x = age, y = circumference, alpha = Tree))
 ```
+
+<img src="/figures/20190416_ggplot_geom_line/alpha_aes-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
 Here we map the `Tree` variable to the `alpha` aesthetic, which controls the transparency of the line. As you can see, certain lines are more transparent than others. In this case, transparency does not add to our understanding of the graph, so I would not use this to illustrate this dataset.
 
 
 ##### Changing the `size` aesthetic mapping in `ggplot + geom_line`
 
-```{r size_aes}
+
+```r
 ggplot(Orange) +
     geom_line(aes(x = age, y = circumference, size = Tree))
 ```
+
+<img src="/figures/20190416_ggplot_geom_line/size_aes-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
 Finally, we turn to the size aesthetic, which controls the size of lines. Again, I would say this is not does not add to our understanding of our data in this context. That said, it does slightly resemble [Charles Joseph Minard's](https://en.wikipedia.org/wiki/Charles_Joseph_Minard) famous graph of the death tolls of Napoleon's disastrous 1812 Russia Campaign, so that's kind of cool:
 
@@ -224,10 +236,13 @@ Essentially, they all work the same as color! That's the beautiful thing about g
 
 Each of the aesthetic mappings you've seen can also be used as a *parameter*, that is, a fixed value defined outside of the `aes()` aesthetic mappings. You saw how to do this with color when we set the line to red with `color = 'red'` before. Now let's look at an example of how to do this with linetype in the same manner:
 
-```{r linetype_parameter}
+
+```r
 ggplot(Orange) +
     geom_line(aes(x = age, y = circumference, group = Tree), linetype = 'dotted')
 ```
+
+<img src="/figures/20190416_ggplot_geom_line/linetype_parameter-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
 To review what values `linetype`, `size`, and `alpha` accept, just run `?linetype`, `?size`, or `?alpha` from your console window!
 
@@ -249,10 +264,13 @@ Whenever you see this error about object not found, make sure you check and make
 
 Alternatively, if we try to specify a specific parameter value (for example, `color = 'red'`) inside of the `aes()` mapping, we get a less intutive issue:
 
-```{r}
+
+```r
 ggplot(Orange) +
     geom_line(aes(x = age, y = circumference, color = 'red'))
 ```
+
+<img src="/figures/20190416_ggplot_geom_line/unnamed-chunk-1-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
 In this case, `ggplot` actually does produce a line graph (success!), but it doesn't have the result we intended. The graph it produces looks odd, because it is putting the values for all 5 trees on a single line, rather than on 5 separate lines like we had before. It did change the color to red, but it also included a legend that simply says 'red'. When you run into issues like this, double check to make sure you're including the parameters of your graph *outside* your `aes()` call!
 
