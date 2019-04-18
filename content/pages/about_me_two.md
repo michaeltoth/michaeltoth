@@ -2,6 +2,18 @@ Title: About Two
 Date: 2016-03-13 15:00
 Status: Hidden
 
+<style>
+td {
+    border: none;
+    width: 33%
+}
+
+table {
+  table-layout: fixed ;
+  width: 100% ;
+}
+</style>
+
 #I'm Michael Toth.
 
 ###I'm a writer and data science consultant.
