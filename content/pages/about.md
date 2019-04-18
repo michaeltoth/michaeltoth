@@ -4,7 +4,7 @@ Date: 2019-04-18 15:00
 <style>
 td {
     border: none;
-    border-top: none;
+    border-top: none !important;
     width: 33%
 }
 
@@ -25,7 +25,8 @@ Here are some of the places my data science writing has been featured:
 
 <img src='../images/logos.png' />
 
-These days, I'm focused on 3 things:
+<br>
+<h3>These days, I'm focused on 3 things:</h3>
 
 <table border="0">
  <tr>
