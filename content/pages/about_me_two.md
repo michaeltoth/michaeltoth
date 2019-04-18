@@ -24,8 +24,6 @@ Here are some of the places my data science writing has been featured.
 
 These days, I'm focused on 3 things:
 
-<br>
-<br>
 <table border="0">
  <tr>
     <td><h3>Consulting</h3></td>
@@ -43,9 +41,13 @@ These days, I'm focused on 3 things:
 
 # It's been a long road getting to where I am today
 
-Originally hailing from the great state of Ohio, I turned east for college. I spent four years in Philadelphia at The Wharton School of Business at the University of Pennsylvania. In 2011, I graduated magna cum laude with studies in statistics, economics, mathematics, and finance. 
+Originally hailing from the great state of Ohio, I turned east for college. 
 
-Then I moved to New York where I began my career at BlackRock, the world's largest financial asset manager. While at BlackRock, I helped some of the largest commercial banks in the United States to value and stress test their financial portfolios. It was everything I'd ever dreamed of. Except, it wasn't. I wasn't challenged, and after a while I didn't feel like I was growing my skills.
+I spent four years in Philadelphia at The Wharton School of Business at the University of Pennsylvania. In 2011, I graduated magna cum laude with studies in statistics, economics, mathematics, and finance. 
+
+Then I moved to New York where I began my career at BlackRock, the world's largest financial asset manager. While at BlackRock, I helped some of the largest commercial banks in the United States to value and stress test their financial portfolios. 
+
+It was everything I'd ever dreamed of. Except, it wasn't. I wasn't challenged, and after a while I didn't feel like I was growing my skills.
 
 I decided I needed a change. So I spent my nights and weekends studying R programming and figuring out how to become a data scientist. 
 
@@ -53,21 +55,23 @@ At some point during these studies, with no particular goals in mind, I started 
 
 Because I latched onto something that is easy to forget when your head is down studying. You don't need to be a world-class expert to get a job as a data scientist. You just need to be able to do the things expected of you in your particular role.
 
-When I was looking for my next job, I found Orchard, a company doing online lending analytics, which was similar to what I already had experience with at BlackRock. I found a public data set, analyzed some interesting findings, and wrote up a post about it on this blog. Now, I think of it as [the blog post that launched my career](https://michaeltoth.me/analyzing-historical-default-rates-of-lending-club-notes.html), because that blog post secured me a job at Orchard.
+When I was looking for my next job, I found Orchard, a company doing online lending analytics, which was similar to what I already had experience with at BlackRock. I found a public data set, analyzed some interesting findings, and wrote up a post about it on this blog. That blog post **proved** I had the skills to do what they needed me to do. 
 
-Getting that first full-time job as a data scientist was what it took to really take my skills to the next level. But I was always careful to optimize my learning for the most important things to move my career and skillset forward. 
+Now, I think of it as [the blog post that launched my career](https://michaeltoth.me/analyzing-historical-default-rates-of-lending-club-notes.html), because that blog post secured me a job at Orchard.
 
-# I'm not a "business" expert or a 10x developer
+Getting that first full-time job as a data scientist was what it took to really take my skills to the next level. But I was always careful to optimize my learning for the most important things I needed to know to move my career and skillset forward. 
+
+# I'm not a business expert, a 10x developer, or an artificial intelligence guru
 
 I don't know everything. 
 
-If you want to understand the cutting edge machine learning models or understand parameter tuning your neural network, you're not going to find it here.
+If you want to understand the cutting edge machine learning models or understand hyperparameter tuning your neural network, you're not going to find it here.
 
-But if you want to master the core skills you need to become a data scientist, learn the skills to market yourself and grow your data science career, then I can help you.
+But if you want to master the core skills you need to become a data scientist, learn the tools to market yourself, and grow your data science career, then I can help you.
 
-I'm a master of cutting away the bullshit that doesn't matter to get to the core of an issue.
+I'm a master of cutting away the bullshit that doesn't matter to focus on the things you need to achieve the results you want.
 
-If you're still with me, thank you. You're clearly committed to improving as a data scientist. Sign up below to follow along:
+If you're still with me, thank you. You're clearly committed to improving as a data scientist. I will help you learn R programming, build your data science career, and raise your salary.
 
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
