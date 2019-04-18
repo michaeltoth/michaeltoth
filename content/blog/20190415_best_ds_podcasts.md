@@ -111,7 +111,7 @@ I thought some form of categorization would help guide my listening, so I create
 * R Programming                    
 * Python Programming 
 
-I went through this list and categorized them as best as I could according to topic. Equipped with these new categories, let's take a look at the list of recommendations now: 
+I went through this list and categorized them as best as I could according to topic. Equipped with these new categories, let's take a look at the list of recommendations: 
 
 
 ```r

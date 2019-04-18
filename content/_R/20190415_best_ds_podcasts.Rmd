@@ -117,9 +117,9 @@ I thought some form of categorization would help guide my listening, so I create
 * R Programming                    
 * Python Programming 
 
-I went through this list and categorized them as best as I could according to topic. Equipped with these new categories, let's take a look at the list of recommendations now: 
+I went through this list and categorized them as best as I could according to topic. Equipped with these new categories, let's take a look at the list of recommendations: 
 
-```{r graph_podcasts_by_topic, fig.height=6, fig.width=5}
+```{r graph_podcasts_by_topic, fig.height=7, fig.width=5}
 
 ggplot(podcasts, aes(x = reorder(Title, Score), y = Score, fill = Category)) +
     geom_bar(stat = 'identity') +
