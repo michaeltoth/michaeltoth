@@ -14,6 +14,7 @@ tr {
 table {
   table-layout: fixed ;
   width: 100% ;
+  border: none;
 }
 </style>
 
@@ -32,9 +33,9 @@ These days, I'm focused on 3 things:
     <td align="center"><h3>R Training</h3></td>
  </tr>
  <tr>
-    <td>I can help you tackle your analytics challenges and get data-driven answers to your biggest business questions. <a href="https://www.michaeltoth.me/contact-me.html">Contact me</a> for more information.</td>
-    <td>Every month I help over 5000 people learn R programming, build their data science careers, and develop new skills through this blog. </td>
-    <td>I will help you boost the data capabilities of your team. <a href="https://www.michaeltoth.me/contact-me.html">Contact me</a> for more information. </td>
+    <td align="center">I can help you tackle your analytics challenges and get data-driven answers to your biggest business questions. <a href="https://www.michaeltoth.me/contact-me.html">Contact me</a> for more information.</td>
+    <td align="center">Every month I help over 5000 people learn R programming, build their data science careers, and develop new skills through this blog. </td>
+    <td align="center">I will help you boost the data capabilities of your team. <a href="https://www.michaeltoth.me/contact-me.html">Contact me</a> for more information. </td>
  </tr>
 </table>
 <br>
