@@ -10,32 +10,24 @@ Here are some of the places my data science writing has been featured.
 
 <img src='../images/logos.png' />
 
-Here's what I'm up to these days.
+These days, I'm focused on 3 things:
 
+<br>
+<br>
 <table border="0">
  <tr>
-    <td><b style="font-size:30px">Consulting</b></td>
-    <td><b style="font-size:30px">Blogging</b></td>
-    <td><b style="font-size:30px">R Training</b></td>
+    <td><h3>Consulting</h3></td>
+    <td><h3>Blogging</h3></td>
+    <td><h3>R Training</h3></td>
  </tr>
  <tr>
-    <td>I can help you tackle your analytics challenges and get data-driven answers to your biggest business questions. {filename}[Contact me](./contact.md) for more information.</td>
+    <td>I can help you tackle your analytics challenges and get data-driven answers to your biggest business questions. <a href="https://www.michaeltoth.me/contact-me.html">Contact me</a> for more information.</td>
     <td>Every month I help over 5000 people learn R programming, build their data science careers, and develop new skills through this blog. </td>
-    <td>I will help you boost the data capabilities of your team. {filename}[Contact me](./contact.md) for more information. </td>
+    <td>I will help you boost the data capabilities of your team. <a href="https://www.michaeltoth.me/contact-me.html">Contact me</a> for more information. </td>
  </tr>
 </table>
-
-### Consulting
-
-I can help you tackle your analytics challenges and get data-driven answers to your biggest business questions. {filename}[Contact me](./contact.md) for more information.
-
-### Blogging
-
-Every month I help over 5000 people learn R programming, build their data science careers, and develop new skills through this blog. 
-
-### R Training
-
-I will help you boost the data capabilities of your team. {filename}[Contact me](./contact.md) for more information.
+<br>
+<br>
 
 # It's been a long road getting to where I am today
 
