@@ -14,9 +14,7 @@ table {
 }
 </style>
 
-#I'm Michael Toth.
-
-###I'm a writer and data science consultant.
+###I'm Michael Toth. I'm a writer and a data science consultant.
 
 Here are some of the places my data science writing has been featured.
 
@@ -37,9 +35,8 @@ These days, I'm focused on 3 things:
  </tr>
 </table>
 <br>
-<br>
 
-# It's been a long road getting to where I am today
+### It's been a long road getting to where I am today
 
 Originally hailing from the great state of Ohio, I turned east for college. 
 
@@ -53,23 +50,25 @@ I decided I needed a change. So I spent my nights and weekends studying R progra
 
 At some point during these studies, with no particular goals in mind, I started this blog. That decision has been by far the best decision of my career.
 
-Because I latched onto something that is easy to forget when your head is down studying. You don't need to be a world-class expert to get a job as a data scientist. You just need to be able to do the things expected of you in your particular role.
+You see, at some point, I latched onto a fundamental truth that is easy to forget when you've got your head down studying: you don't need to be a world-class expert to get a job as a data scientist. You just need to be able to do the things expected of you.
 
-When I was looking for my next job, I found Orchard, a company doing online lending analytics, which was similar to what I already had experience with at BlackRock. I found a public data set, analyzed some interesting findings, and wrote up a post about it on this blog. That blog post **proved** I had the skills to do what they needed me to do. 
+So when I was looking for my next job, I decided to put that to the test. I found a company called Orchard that was looking to hire a data scientist. This company specialized in online lending analytics, something similar to what I was already working on at BlackRock. So I found a public Lending Club data set, did some analysis of the data in R, and wrote up a post about it on this blog. 
 
-Now, I think of it as [the blog post that launched my career](https://michaeltoth.me/analyzing-historical-default-rates-of-lending-club-notes.html), because that blog post secured me a job at Orchard.
+That blog post **proved** I had the skills to do what they needed me to do. I didn't need to convince them.
 
-Getting that first full-time job as a data scientist was what it took to really take my skills to the next level. But I was always careful to optimize my learning for the most important things I needed to know to move my career and skillset forward. 
+Now, I think of it as [the blog post that launched my career](https://michaeltoth.me/analyzing-historical-default-rates-of-lending-club-notes.html), because that blog post secured me my first job as a data scientist.
 
-# I'm not a business expert, a 10x developer, or an artificial intelligence guru
+Getting that first full-time job as a data scientist was what I needed to really take my skills to the next level. The reality is, you're never going to know everything, and on-the-job learning is one of the most important parts of being a data scientist. And I always made sure to optimize my learning for the most important things I needed to know to move my career and skillset forward. 
+
+### I'm not a business expert, a 10x developer, or an artificial intelligence guru
 
 I don't know everything. 
 
 If you want to understand the cutting edge machine learning models or understand hyperparameter tuning your neural network, you're not going to find it here.
 
-But if you want to master the core skills you need to become a data scientist, learn the tools to market yourself, and grow your data science career, then I can help you.
+But if you want to master the core skills you need to become a data scientist, learn how to market yourself, and grow your data science career, then I can help you.
 
-I'm a master of cutting away the bullshit that doesn't matter to focus on the things you need to achieve the results you want.
+I'm a master of cutting away the bullshit that doesn't matter to focus on the things you need to achieve your goals.
 
 If you're still with me, thank you. You're clearly committed to improving as a data scientist. I will help you learn R programming, build your data science career, and raise your salary.
 
