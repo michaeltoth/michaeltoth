@@ -12,17 +12,30 @@ Here are some of the places my data science writing has been featured.
 
 Here's what I'm up to these days.
 
+<table border="0">
+ <tr>
+    <td><b style="font-size:30px">Consulting</b></td>
+    <td><b style="font-size:30px">Blogging</b></td>
+    <td><b style="font-size:30px">R Training</b></td>
+ </tr>
+ <tr>
+    <td>I can help you tackle your analytics challenges and get data-driven answers to your biggest business questions. {filename}[Contact me](./contact.md) for more information.</td>
+    <td>Every month I help over 5000 people learn R programming, build their data science careers, and develop new skills through this blog. </td>
+    <td>I will help you boost the data capabilities of your team. {filename}[Contact me](./contact.md) for more information. </td>
+ </tr>
+</table>
+
 ### Consulting
 
-Helping companies to navigate their data. Contact me for more information.
+I can help you tackle your analytics challenges and get data-driven answers to your biggest business questions. {filename}[Contact me](./contact.md) for more information.
 
 ### Blogging
 
-Every month I help over 5000 people learn R, build their careers as data scientists, and develop new skills through this blog. 
+Every month I help over 5000 people learn R programming, build their data science careers, and develop new skills through this blog. 
 
 ### R Training
 
-Are you interested in having a skilled R programmer train your company on how they can use R to accomplish analytics tasks? I offer R training sessions, contact me for more information.
+I will help you boost the data capabilities of your team. {filename}[Contact me](./contact.md) for more information.
 
 # It's been a long road getting to where I am today
 
@@ -30,17 +43,25 @@ Originally hailing from the great state of Ohio, I turned east for college. I sp
 
 Then I moved to New York where I began my career at BlackRock, the world's largest financial asset manager. While at BlackRock, I helped some of the largest commercial banks in the United States to value and stress test their financial portfolios. It was everything I'd ever dreamed of. Except, it wasn't. I wasn't challenged, and after a while I didn't feel like I was growing my skills.
 
-I decided I needed a change. I spent my nights and weekends studying R programming and figuring out how to become a data scientist. 
+I decided I needed a change. So I spent my nights and weekends studying R programming and figuring out how to become a data scientist. 
 
-Around 6 months into my studies, I started this blog without any particular goals in mind. That decision has been by far the best decision of my career.
+At some point during these studies, with no particular goals in mind, I started this blog. That decision has been by far the best decision of my career.
 
-[The blog post that launched my career](https://michaeltoth.me/analyzing-historical-default-rates-of-lending-club-notes.html)
+Because I latched onto something that is easy to forget when your head is down studying. You don't need to be a world-class expert to get a job as a data scientist. You just need to be able to do the things expected of you in your particular role.
 
-I don't know everything. If you want to understand the cutting edge machine learning models or understand parameter tuning your neural network, you're not going to find it here.
+When I was looking for my next job, I found Orchard, a company doing online lending analytics, which was similar to what I already had experience with at BlackRock. I found a public data set, analyzed some interesting findings, and wrote up a post about it on this blog. Now, I think of it as [the blog post that launched my career](https://michaeltoth.me/analyzing-historical-default-rates-of-lending-club-notes.html), because that blog post secured me a job at Orchard.
+
+Getting that first full-time job as a data scientist was what it took to really take my skills to the next level. But I was always careful to optimize my learning for the most important things to move my career and skillset forward. 
+
+# I'm not a "business" expert or a 10x developer
+
+I don't know everything. 
+
+If you want to understand the cutting edge machine learning models or understand parameter tuning your neural network, you're not going to find it here.
 
 But if you want to master the core skills you need to become a data scientist, learn the skills to market yourself and grow your data science career, then I can help you.
 
-And if you're looking for somebody to help you solve data science problems at your company or train your work force to learn and use R in a way that sticks, I can help you.
+I'm a master of cutting away the bullshit that doesn't matter to get to the core of an issue.
 
 If you're still with me, thank you. You're clearly committed to improving as a data scientist. Sign up below to follow along:
 
@@ -66,13 +87,3 @@ If you're still with me, thank you. You're clearly committed to improving as a d
 </div>
 
 <!--End mc_embed_signup-->
-
-
-
-
-
-From BlackRock, I moved on to Orchard, a financial analytics startup, and I ultimately became the head of the research team. I analyzed the vast amounts of data that Orchard ingested on a daily basis to produce cogent, actionable insights for our clients. The content that I created directly established Orchard as the leading analytics and data company in the Alternative Lending industry. Check out the [Published Writing Page]({filename}./writing.md) of this site for a sample of some of the work I created while at Orchard.
-
-Throughout my career, my focus has been to break down highly technical ideas into easily digestible pieces, then weave those pieces into a clear narrative. I seek to understand problems at the deepest level, always asking "why" to gain further insight. This degree of focus lets me dissect complex ideas and explain highly technical concepts to broad audiences. I use analytical programming tools to create beautiful data visualizations and graphics that present my conclusions. I do the majority of my day-to-day work and analyses using R and Linux command-line tools, but I also have experience with the Python data science stack. I'm always experimenting with new workflows and tools, and I love to talk about them. Hit me up on <a href="https://www.twitter.com/Michael_Toth" target="_blank">Twitter</a> if you want to chat!
-
-I'm a data scientist in New York City who specializes in writing analytical content that helps financial technology companies gain credibility, build a following, and win more business. If you're interested in hearing more about my business or how we could work together, you can visit my <a href="https://www.michaeltothanalytics.com" target="_blank">consulting website</a> or contact me at <michael@michaeltothanalytics.com>!
