@@ -4,6 +4,7 @@ Date: 2019-04-18 15:00
 <style>
 td {
     border: none;
+    border-top: none;
     width: 33%
 }
 
