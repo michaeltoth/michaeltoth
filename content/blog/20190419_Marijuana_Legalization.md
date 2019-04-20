@@ -5,7 +5,6 @@ date: 2019-04-20
 category: Maps
 tags: R, Marijuana
 output: html_document
-status: draft
 summary: Mapping the growth of legal marijuana states and medical marijuana states from 1995 - 2019
 ---
 
