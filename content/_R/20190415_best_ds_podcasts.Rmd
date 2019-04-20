@@ -5,7 +5,6 @@ date: 2019-04-19
 category: R
 tags: R, Data Science Podcasts, Analytics Podcasts, Data Visualization Podcasts, Machine Learning Podcasts
 output: html_document
-status: draft
 summary: I created the most extensive list of data science podcasts available by crowdsourcing results from Google search into this my own ultimate list of 41 data science podcasts.
 ---
 
