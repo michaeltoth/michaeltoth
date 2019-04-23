@@ -1,5 +1,4 @@
 Title: Resources
-Status: hidden
 
 <style>
 
@@ -117,7 +116,13 @@ The books below are my top recommendations for learning R, statistics, and data 
 
 ## Top Data Science Podcasts
 
-I'm also a big fan of listening to podcasts to learn about new material and keep up to date on the latest trends in data science. My top 5 podcasts are:
+I'm also a big fan of listening to podcasts to learn about new material and keep up to date on the latest trends in data science. I listen to podcasts on the subway, when I'm walking around, or when I have an hour to kill with nothing to do. They're one of the best ways to get advice directly from experts in your industry.
+
+#### [Get my Ultimate List of 41 Top Data Science Podcasts](https://michaeltoth.me/generating-the-ultimate-list-of-41-data-science-podcasts-by-crowdsourcing-google-results.html)
+
+You can check out my top 5 podcast recommendations below. But if 5 isn't enough, and you want more (trust me, I'm with you), then you'll want to check out my [ultimate list of the top 41 data science podcasts](https://mailchi.mp/d18f2f50ca14/data-science-podcasts) that I recently created by [crowdsourcing recommendations from Google search results](https://michaeltoth.me/generating-the-ultimate-list-of-41-data-science-podcasts-by-crowdsourcing-google-results.html). You can get the full list here:
+
+[Get the Ultimate List of 41 Data Science Podcasts](https://mailchi.mp/d18f2f50ca14/data-science-podcasts)
 
 #### [Data Stories](http://datastori.es/)
 
@@ -138,9 +143,3 @@ Roger Peng and Hilary Parker talk about the latest in data science and data anal
 #### [Present Beyond Measure](http://leapica.com/podcast/)
 
 Your one-stop shop for essential data visualization and presentation skills for digital marketers, web analysts, and BI practitioners. This is the toolset you need to present your data, inform business decisions, inspire action, and become indispensable.
-
-#### [Get my Ultimate List of 41 Top Data Science Podcasts](https://michaeltoth.me/generating-the-ultimate-list-of-41-data-science-podcasts-by-crowdsourcing-google-results.html)
-
-These days, there are a lot of data science podcasts to choose from. The above 5 are my favorite current podcasts, but I recently worked to create an [ultimate list of the top 41 data science podcasts](https://mailchi.mp/d18f2f50ca14/data-science-podcasts) by [crowdsourcing recommendations from Google search results](https://michaeltoth.me/generating-the-ultimate-list-of-41-data-science-podcasts-by-crowdsourcing-google-results.html). If you're interested in the full list, you can download it here:
-
-[Get the Ultimate List of 41 Data Science Podcasts](https://mailchi.mp/d18f2f50ca14/data-science-podcasts)
