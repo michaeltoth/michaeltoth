@@ -64,7 +64,7 @@ The books below are my top recommendations for learning R, statistics, and data 
                 <img src='../images/books/r-for-data-science.png' />
                 <h3>R for Data Science</h3> 
                 <h6>Hadley Wickham and Garrett Grolemund</h6>
-                <p>In my opinion, this is *THE BOOK* for learning how to use R for data science. This book is beginner-friendly and is suitable for readers with no prior programming experience. You will learn how to use R to turn raw data into insight, knowledge, and understanding. This book covers R, RStudio, and the tidyverse, a collection of R packages designed to work together to make data science fast, fluent, and fun. Read this book for a very good introduction to R so that you can start practicing data science as quickly as possible.</p>
+                <p>This is <b>THE BOOK</b> for learning how to use R for data science. This book is beginner-friendly and is suitable for readers with no prior programming experience. You will learn how to use R to turn raw data into insight, knowledge, and understanding. This book covers R, RStudio, and the tidyverse, a collection of R packages designed to work together to make data science fast, fluent, and fun. Read this book for a very good introduction to R so that you can start practicing data science as quickly as possible.</p>
                 <p><a href='https://r4ds.had.co.nz/'>Read Online for Free</a></p>
                 <p><a href='https://amzn.to/2G6Bvfy'>Purchase on Amazon</a></p>
             </a>
@@ -97,9 +97,7 @@ The books below are my top recommendations for learning R, statistics, and data 
                 <img src='../images/books/the-visual-display-of-quantitative-information.jpg' />
                 <h3>The Visual Display of Quantitative Information</h3> 
                 <h6>Edward R. Tufte</h6>
-                <p>This is the classic book on data visualization, still as relevant today as when it was first published. If you struggle with deciding what graphs to use and when to use them, this book is for you. If you struggle with having your work taken seriously, this is the book for you. Honestly, this book looks old, but I promise it's not. 
-
-                If you want to differentiate yourself and your work from other analysts who simply can't be bothered, get this book. 
+                <p>This is book is <b>the bible of data visualization</b>, still as relevant today as when it was first published. If you struggle with deciding which graphs to use and when to use them, this book is for you. If you struggle to get your work taken seriously, this is the book for you. If you want to differentiate yourself and your work from other analysts who simply can't be bothered, get this book. 
                 <p><a href='https://amzn.to/2UtV23K'>Purchase on Amazon</a></p>
             </a>
         </li>
@@ -108,9 +106,7 @@ The books below are my top recommendations for learning R, statistics, and data 
                 <img src='../images/books/cracking-the-coding-interview.jpg' />
                 <h3>Cracking the Coding Interview</h3> 
                 <h6>Gayle Laakmann McDowell</h6>
-                <p>This is THE definitive book for whiteboard-style coding interviews. While this book is primarily intended for software developers, data scientists will often be asked to perform the same type of algorithms and coding questions, and this is an indispensable resource to prepare for and understand how to solve challenging algorithms and coding questions that are bound to come up in job interviews. 
-
-                I'm a big believer that you don't need to know everything to get a job as a data scientist. That said, you *do* still need to get through an interview in most cases, and this book will help get you there.</p>
+                <p>This is <b>the definitive book for whiteboard-style coding interviews</b>. This book is marketed toward software developers, but it's just as relevant for data scientists. The fact is, you're going to get coding challenges in job interviews. The problems can be simple once you understand them, but will be incredibly difficult if you never practice. This book is an indispensable resource to prepare for and understand how to solve challenging algorithms and coding questions that are bound to come up in job interviews. I'm a big believer that you don't need to know everything to get a job as a data scientist. That said, you <b>do</b> still need to get through an interview in most cases, and this book will help get you there.</p>
                 <p><a href='https://amzn.to/2DtEVc2'>Purchase on Amazon</a></p>
             </a>
         </li>
