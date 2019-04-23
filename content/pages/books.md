@@ -89,6 +89,20 @@ Some of the links on this page are affiliate links. An affiliate link means I ma
                 <p><a href='https://amzn.to/2UtV23K'>Purchase on Amazon</a></p>
             </a>
         </li>
+        <li class="book-list-element">
+            <a href='https://amzn.to/2DtEVc2' class="list-link">
+                <img src='../images/books/cracking-the-coding-interview.jpg' />
+                <h3>Cracking the Coding Interview</h3> 
+                <h6>Edward R. Tufte</h6>
+                <p>Good Book</p>
+                <p><a href='https://amzn.to/2DtEVc2'>Purchase on Amazon</a></p>
+            </a>
+        </li>
 
     </ul>
 </div>
+
+
+CRACKING THE CODING INTERVIEW
+
+
