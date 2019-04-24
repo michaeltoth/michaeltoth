@@ -1,7 +1,7 @@
 ---
 title: A Detailed Guide to the ggplot Scatter Plot in R
 author: Michael Toth
-date: 2019-04-24
+date: 2019-04-24 8:05
 category: R
 tags: R, ggplot, scatter plot, geom_point
 output: html_document
