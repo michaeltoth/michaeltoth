@@ -1,3 +1,8 @@
+# This workbook is built to help you master the scatter plot in ggplot
+# It is designed to accompany this guide on my website:
+# https://michaeltoth.me/a-detailed-guide-to-the-ggplot-scatter-plot-in-r.html
+
+
 ################################################################################
 ##################### Loading Packages & Investigating Data ####################
 ################################################################################
