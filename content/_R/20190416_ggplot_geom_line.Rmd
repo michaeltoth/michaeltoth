@@ -21,9 +21,9 @@ options(device = function(file, width, height) {
 
 When it comes to data visualization, it can be fun to think of all the flashy and exciting ways to display a dataset. But if you're trying to convey information, flashy isn't always the way to go. 
 
-In fact, one of the most powerful ways to communicate the relationship between two variables is the simple line graph. 
+In fact, in most cases, **simplicity is key to making your audience understand** your data. Whether it's [scatter plots](https://michaeltoth.me/a-detailed-guide-to-the-ggplot-scatter-plot-in-r.html), bar graphs, or line graphs (the subject of this post!), common graph types make things easy for your audience, which means you can more easily share your message.
 
-A line graph is a type of graph that displays information as a series of data points connected by straight line segments. 
+Right now, we're talking about line graphs. A line graph is a type of graph that displays information as a series of data points connected by straight line segments. 
 
 
 ##### The price of Netflix stock (NFLX) displayed as a line graph
