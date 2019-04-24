@@ -2,7 +2,7 @@ beautifulsoup4==4.4.1
 blinker==1.4
 docutils==0.12
 feedgenerator==1.7
-Jinja2==2.8
+Jinja2==2.10.1
 Markdown==2.6.5
 MarkupSafe==0.23
 pelican==3.6.3
