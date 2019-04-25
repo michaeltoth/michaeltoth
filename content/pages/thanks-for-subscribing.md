@@ -25,7 +25,7 @@ Status: Hidden
 
 ### You're Almost There!
 
-Look out for an email from my shortly. Thank you for subscribing!
+Look out for an email from me shortly. Thank you for subscribing!
 
 <br>
 
