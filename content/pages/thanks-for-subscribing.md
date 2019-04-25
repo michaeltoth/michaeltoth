@@ -19,7 +19,7 @@ Status: Hidden
 .center-div
 {
      margin: 0 auto;
-     width: 25%;
+     width: 33%;
 }
 </style>
 
