@@ -15,6 +15,12 @@ Status: Hidden
   background-color: #ff7a3a;
   color: #ffffff;
 }
+
+.center-div
+{
+     margin: 0 auto;
+     width: 100px; 
+}
 </style>
 
 ### You're Almost There!
@@ -29,6 +35,6 @@ Did you know that one of my most popular pages is my Resources page?
 
 The Resources page is a collection of some of my all-time favorite and most useful books, podcasts, tools, and software to help you master R and grow your income, no matter what level you’re at. It’s always being updated, and here for you when you need it.
 
-<div margin:auto>
-<a href="https://michaeltoth.me/pages/resources.html" class="button">CHECK OUT THE RESOURCES PAGE</a>
+<div class="center-div">
+<h3><a href="https://michaeltoth.me/pages/resources.html" class="button">CHECK OUT THE RESOURCES PAGE</a></h3>
 </div>
