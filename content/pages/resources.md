@@ -60,7 +60,7 @@ Even with all the success I've had, it's still difficult for me to convince othe
     <ul id="image-list">
         <li class="image-list-element">
             <a href='https://www.bluehost.com/track/michaeltoth/' target="_blank" class="list-link">
-                <img border="0" src="https://bluehost-cdn.com/media/partner/images/michaeltoth/125X240/125X240BW.png">
+                <img border="0" src="https://bluehost-cdn.com/media/partner/images/michaeltoth/125x240/125x240BW.png">
                 <h3>Bluehost</h3> 
                 <p>Bluehost is the service that I recommend for getting your domain name and blog hosting setup. Of all the hosting services I've testing, I've found Bluehost's interface to be the easiest to work with out-of-the-box, without all kinds of frustrating setup issues. If you want to get your blog started quickly and easily, Bluehost is the way to go.</p>
             </a>
