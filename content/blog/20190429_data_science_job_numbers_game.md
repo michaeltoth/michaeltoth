@@ -13,7 +13,7 @@ summary: Getting a data science job should not be a numbers game. Here's how to 
 ![Getting a data science job by throwing darts at a board](../images/20190429_data_science_job_numbers_game/darts.png){width=600px}
 </center>
 
-## My First, Non Data Science, Job Search
+## My First (Non Data Science) Job Search
 
 Let me tell you a story about my first job search. It was 2010, and data science jobs weren't really a thing yet. I'll get to that in a minute, but bear with me first because there's a point to all this.
 
