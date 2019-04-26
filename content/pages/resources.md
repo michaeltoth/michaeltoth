@@ -50,11 +50,15 @@ Before digging into these awesome resources, an important disclosure:
 
 Some of the links below are affiliate links, which means that if you choose to make a purchase, I will earn a commission. This commission comes at no extra cost to you. I have experience with all of these companies and products, and I recommend them because they are helpful and useful, not because of the small commissions I make if you purchase something. Please do not spend any money on these products unless you feel you need them or that they will help you achieve your goals.
 
-## Starting a Blog
+## Start a Blog To Supercharge Your Career
 
-Creating my blog has been, by far, the most profitable thing I have ever done for my career. I got my first data science job because of this blog. I'm able to help thousands of other people on their journeys to learn R and improve their careers each month because of this blog. 
+Creating my blog is, by far, the most profitable thing I have ever done for my career. I got my first data science job because of this blog. I'm able to help thousands of other people on their journeys to learn R and improve their careers each month because of this blog. 
 
-Even with all the success I've had, it's still difficult for me to convince others that they should start their own blog. I promise you this: if you start a blog, you will see success. It won't happen overnight, but you will learn new things, grow your network, and eventually find new job opportunities and raise your salary. 
+I can trace much of the money I've made and the career satisfaction I've enjoyed over the last 5 years directly to this blog.
+
+Still, when I encourage other data scientists and analytics people to start a blog, they're skeptical. 
+
+I get it. A blog is a commitment. And you won't see success overnight. But I promise you this: if you start a blog and stick with it, writing consistently, **you will see success**. You will learn new things, grow your network, find new job opportunities and grow your income. Again, it won't happen overnight, but starting a blog is the single highest leverage thing you can do to grow your analytics career. 
 
 <div>
     <ul id="image-list">
@@ -62,7 +66,7 @@ Even with all the success I've had, it's still difficult for me to convince othe
             <a href='https://www.bluehost.com/track/michaeltoth/' target="_blank" class="list-link">
                 <img border="0" src="https://bluehost-cdn.com/media/partner/images/michaeltoth/430x288/430x288BW.png">
                 <h3>Bluehost</h3> 
-                <p>Bluehost is the service that I recommend for getting your domain name and blog hosting setup. Of all the hosting services I've testing, I've found Bluehost's interface to be the easiest to work with out-of-the-box, without all kinds of frustrating setup issues. If you want to get your blog started quickly and easily, Bluehost is the way to go.</p>
+                <p>Bluehost is the service that I recommend for starting your blog. They make it extremely easy to get your site up and running with their one-click automatic WordPress Blog installation. The last thing you want when first starting your blog is to be drowning in technical issues. Bluehost is the simplest service that I've found to get your blog started.</p>
             </a>
         </li>
     </ul>
