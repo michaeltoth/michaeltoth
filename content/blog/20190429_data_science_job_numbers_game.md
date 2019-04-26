@@ -9,6 +9,12 @@ status: draft
 summary: Getting a data science job should not be a numbers game. Here's how to focus on your specific strengths to identify the job opportunities where you'll find the most success.
 ---
 
+<center>
+![Getting a data science job by throwing darts at a board](../images/20190429_data_science_job_numbers_game/darts.png){width=600px}
+</center>
+
+## The Story of My First, Non Data Science, Job Search
+
 Let me tell you a story about my first job search. It was 2010, and data science jobs weren't really a thing yet. I'll get to that in a minute, but bear with me first because there's a point to all this.
 
 At the time, I was a junior at the University of Pennsylvania, where I was studying finance and statistics. 
@@ -82,6 +88,10 @@ That doesn't mean you need to know everything, but it does mean that you should 
 For your next data science job search, don't apply for a hundred jobs. Find 10 jobs where you bring unique skills to the table, and try to do something that demonstrates your unique skills to those employers. I promise you'll find far more success with this approach.
 
 -----
+
+Did you find this post useful? I frequently write tutorials like this one to help you learn new skills and improve your data science. If you want to be notified of new tutorials, sign up here!
+
+
 
 Insert some footer shit here
 
