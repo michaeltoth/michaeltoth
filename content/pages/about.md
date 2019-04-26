@@ -30,9 +30,9 @@ Here are some of the places my data science writing has been featured:
 
 <table border="0">
  <tr>
-    <td align="center"><h3>Consulting</h3></td>
-    <td align="center"><h3>Blogging</h3></td>
-    <td align="center"><h3>R Training</h3></td>
+    <td align="center"><h4>Consulting</h4></td>
+    <td align="center"><h4>Blogging</h4></td>
+    <td align="center"><h4>R Training</h4></td>
  </tr>
  <tr>
     <td align="center">I can help you tackle your analytics challenges and get data-driven answers to your biggest business questions. <a href="https://www.michaeltoth.me/contact-me.html">Contact me</a> for more information.</td>
@@ -50,13 +50,13 @@ I spent four years in Philadelphia at The Wharton School of Business at the Univ
 
 Then I moved to New York where I began my career at BlackRock, the world's largest financial asset manager. While at BlackRock, I helped some of the largest commercial banks in the United States to value and stress test their financial portfolios. 
 
-It was everything I'd ever dreamed of. Except, it wasn't. I wasn't challenged, and after a while I didn't feel like I was growing my skills.
+I enjoyed the work I was doing at BlackRock. But ever since college, I'd had a nagging itch to get into a job using my statistics background. 
 
-I decided I needed a change. So I spent my nights and weekends studying R programming and figuring out how to become a data scientist. 
+When I graduated in 2011, data science wasn't really a thing, but by 2014 it was a growing field, and I was ready for a change. But I didn't really know any programming. So I spent my nights and weekends studying R and figuring out how to become a data scientist. 
 
 At some point during these studies, with no particular goals in mind, I started this blog. That decision has been by far the best decision of my career.
 
-You see, at some point, I latched onto a fundamental truth that is easy to forget when you've got your head down studying: you don't need to be a world-class expert to get a job as a data scientist. You just need to be able to do the things expected of you.
+You see, I latched onto a fundamental truth that is easy to forget when you've got your head down studying: you don't need to be a world-class expert to get a job as a data scientist. You just need to be able to do the things expected of you.
 
 So when I was looking for my next job, I decided to put that to the test. I found a company called Orchard that was looking to hire a data scientist. This company specialized in online lending analytics, something similar to what I was already working on at BlackRock. So I found a public Lending Club data set, did some analysis of the data in R, and wrote up a post about it on this blog. 
 
