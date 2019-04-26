@@ -2,37 +2,37 @@ Title: Resources
 
 <style>
 
-ul#book-list {
+ul#image-list {
   list-style-type: none; 
   margin-left: -40px;
   width: 100%;
 }
 
-li.book-list-element {
+li.image-list-element {
   padding: 25px 25px 25px 2px;
   overflow: auto;
 }
 
-li:hover.book-list-element {
+li:hover.image-list-element {
   background: #eee;
   cursor: pointer;
 }
 
-li.book-list-element img {
+li.image-list-element img {
   float: left;
   margin: 0 15px 0 0;
   width: 30%;
 }
 
-li.book-list-element h3 {
+li.image-list-element h3 {
   margin: 0 0 10px 0;
 }
 
-li.book-list-element h6 {
+li.image-list-element h6 {
   margin: 0 0 20px 0;
 }
 
-li.book-list-element p {
+li.image-list-element p {
   margin: 0 0 10px 0;
 }
 
@@ -56,7 +56,17 @@ Creating my blog has been, by far, the most profitable thing I have ever done fo
 
 Even with all the success I've had, it's still difficult for me to convince others that they should start their own blog. I promise you this: if you start a blog, you will see success. It won't happen overnight, but you will learn new things, grow your network, and eventually find new job opportunities and raise your salary. 
 
-<a href="https://www.bluehost.com/track/michaeltoth/" target="_blank"> <img border="0" src="https://bluehost-cdn.com/media/partner/images/michaeltoth/125x240/125x240BW.png"> </a>
+<div>
+    <ul id="image-list">
+        <li class="image-list-element">
+            <a href='https://www.bluehost.com/track/michaeltoth/' target="_blank" class="list-link">
+                <img border="0" src="https://bluehost-cdn.com/media/partner/images/michaeltoth/160x600/160x600BW.png">
+                <h3>Bluehost</h3> 
+                <p>Bluehost is the service that I recommend for getting your domain name and blog hosting setup. Of all the hosting services I've testing, I've found Bluehost's interface to be the easiest to work with out-of-the-box, without all kinds of frustrating setup issues. If you want to get your blog started quickly and easily, Bluehost is the way to go.</p>
+            </a>
+        </li>
+    </ul>
+</div>
 
 ## Recommended Books
 
@@ -65,8 +75,8 @@ In a culture increasingly driven by quick hits of information on social media si
 The books below are my top recommendations for learning R, statistics, and data visualization. I am also including books that I believe are good resources to help you interview, get a new job, and grow your career. 
 
 <div>
-    <ul id="book-list">
-        <li class="book-list-element">
+    <ul id="image-list">
+        <li class="image-list-element">
             <a href='https://amzn.to/2G6Bvfy' class="list-link">
                 <img src='../images/books/r-for-data-science.png' />
                 <h3>R for Data Science</h3> 
@@ -76,7 +86,7 @@ The books below are my top recommendations for learning R, statistics, and data 
                 <p><a href='https://amzn.to/2G6Bvfy'>Purchase on Amazon</a></p>
             </a>
         </li>
-        <li class="book-list-element">
+        <li class="image-list-element">
             <a href='https://amzn.to/2UabBN8' class="list-link">
                 <img src='../images/books/an-introduction-to-statistical-learning.jpg' />
                 <h3>An Introduction to Statistical Learning</h3> 
@@ -88,7 +98,7 @@ The books below are my top recommendations for learning R, statistics, and data 
                 <p><a href='https://amzn.to/2UabBN8'>Purchase on Amazon</a></p>
             </a>
         </li>
-        <li class="book-list-element">
+        <li class="image-list-element">
             <a href='https://amzn.to/2KquXhd' class="list-link">
                 <img src='../images/books/storytelling-with-data.jpeg' />
                 <h3>Storytelling with Data</h3> 
@@ -99,7 +109,7 @@ The books below are my top recommendations for learning R, statistics, and data 
                 <p><a href='https://amzn.to/2KquXhd'>Purchase on Amazon</a></p>
             </a>
         </li>
-        <li class="book-list-element">
+        <li class="image-list-element">
             <a href='https://amzn.to/2UtV23K' class="list-link">
                 <img src='../images/books/the-visual-display-of-quantitative-information.jpg' />
                 <h3>The Visual Display of Quantitative Information</h3> 
@@ -108,7 +118,7 @@ The books below are my top recommendations for learning R, statistics, and data 
                 <p><a href='https://amzn.to/2UtV23K'>Purchase on Amazon</a></p>
             </a>
         </li>
-        <li class="book-list-element">
+        <li class="image-list-element">
             <a href='https://amzn.to/2DtEVc2' class="list-link">
                 <img src='../images/books/cracking-the-coding-interview.jpg' />
                 <h3>Cracking the Coding Interview</h3> 
