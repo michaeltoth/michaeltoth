@@ -9,19 +9,13 @@ status: draft
 summary: Getting a data science job should not be a numbers game. Here's how to focus on your specific strengths to identify the job opportunities where you'll find the most success.
 ---
 
->>>> Who is the character
-
 Let me tell you a story about my first job search. It was 2010, and data science jobs weren't really a thing yet. I'll get to that in a minute, but bear with me first because there's a point to all this.
 
 At the time, I was a junior at the University of Pennsylvania, where I was studying finance and statistics. 
 
->>>> What do they want
-
 Every year, there was months-long on-campus recruiting season where all of the students frantically applied to secure prestigious jobs and internships from big banks and other financial companies.
 
 And I knew I **NEEDED** to get one of those jobs. 
-
->>>> Why can't they have what they want
 
 But unlike a lot of the other students at Penn, I didn't grow up in New York City. I was from a working class family in the midwest. So when I started my job search, I had no connections in the industry. Zero.
 
@@ -33,11 +27,9 @@ Not me. I had no clue. But, what the hell, I figured. I was smart. I was near th
 
 I applied to trading jobs. I applied to investment risk jobs. I applied to investment banking jobs. Over 100 jobs in total. And then... crickets. Most of the companies didn't even respond to me!
 
->>>> What is at stake / the cost if they don't get it
-
 I was freaking out. I needed to land a job. My first job was extremely important, and it would set me up for my entire career. I worried if I didn't get a job now, I would have to move back to Ohio after I graduated, probably closing the door on a prestigious finance job forever.
 
->>>> Who / What helps them do what they couldn't before
+## My Big Break
 
 Finally, after a few weeks of anguish, I got a big break. One of the jobs I had applied to, a technical trading job at Allstate, asked me to interview! 
 
@@ -45,11 +37,9 @@ I was so excited. When I went to the interview, I met a guy named Mark. Mark was
 
 Mark and I got along well, from what I remember. He had a relatively senior role at the company, but his schooling background had been similar to mine. He'd studied finance and engineering, and he was looking for somebody smart with a strong combination of finance and technical skills.
 
->>>> How do they ultimately get what they wanted
-
 He must have seen some potential in me, because shortly after the interview he offered me the job. Of the hundred-or-so jobs I applied to, this was the only offer I received.
 
->>>> How are they changed as a result
+## What I Learned
 
 So what's my point? I tell you your data science job search is not a numbers game, but then I tell you how I applied to over a hundred jobs to get a single offer. What gives?
 
