@@ -50,6 +50,14 @@ Before digging into these awesome resources, an important disclosure:
 
 Some of the links below are affiliate links, which means that if you choose to make a purchase, I will earn a commission. This commission comes at no extra cost to you. I have experience with all of these companies and products, and I recommend them because they are helpful and useful, not because of the small commissions I make if you purchase something. Please do not spend any money on these products unless you feel you need them or that they will help you achieve your goals.
 
+## Starting a Blog
+
+Creating my blog has been, by far, the most profitable thing I have ever done for my career. I got my first data science job because of this blog. I'm able to help thousands of other people on their journeys to learn R and improve their careers each month because of this blog. 
+
+Even with all the success I've had, it's still difficult for me to convince others that they should start their own blog. I promise you this: if you start a blog, you will see success. It won't happen overnight, but you will learn new things, grow your network, and eventually find new job opportunities and raise your salary. 
+
+<a href="https://www.bluehost.com/track/michaeltoth/" target="_blank"> <img border="0" src="https://bluehost-cdn.com/media/partner/images/michaeltoth/125x240/125x240BW.png"> </a>
+
 ## Recommended Books
 
 In a culture increasingly driven by quick hits of information on social media sites like Twitter and Facebook, I am a strong believer in the value of focus. Focused reading of a single topic is still the best way to understand something deeply. I spend a good amount of my time reading every day, and I think that this makes me a better programmer, a more nuanced thinker, and a more well rounded person.
