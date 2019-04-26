@@ -13,7 +13,7 @@ summary: Getting a data science job should not be a numbers game. Here's how to 
 ![Getting a data science job by throwing darts at a board](../images/20190429_data_science_job_numbers_game/darts.png){width=600px}
 </center>
 
-## The Story of My First, Non Data Science, Job Search
+## My First, Non Data Science, Job Search
 
 Let me tell you a story about my first job search. It was 2010, and data science jobs weren't really a thing yet. I'll get to that in a minute, but bear with me first because there's a point to all this.
 
@@ -27,19 +27,19 @@ But unlike a lot of the other students at Penn, I didn't grow up in New York Cit
 
 Obviously, my applications weren't going to be fast tracked. But more importantly, I had nobody to ask questions about the different job opportunities available. 
 
-You see, it felt like everybody else in school understood all of the different types of jobs in finance and which ones to apply to. N
+It felt like everybody else in school understood all of the different types of jobs in finance and which ones to apply to.
 
-Not me. I had no clue. But, what the hell, I figured. I was smart. I was near the top of my class. I had a 3.8 GPA and an extremely difficult and technical course load. Somebody would hire me! And I don't really care what **type of job** I got, I just needed a job. So I applied to everything. 
+Not me. I had no clue. But, what the hell, I figured. I was smart. I was near the top of my class! I had a 3.8 GPA and an extremely difficult and technical course load. Somebody would hire me! And I didn't really care what **type of job** I got, I just needed a job. So I applied to everything. 
 
-I applied to trading jobs. I applied to investment risk jobs. I applied to investment banking jobs. Over 100 jobs in total. And then... crickets. Most of the companies didn't even respond to me!
+I applied to trading jobs. I applied to investment risk jobs. I applied to investment banking jobs. Over 100 jobs in total. And then... crickets. Most of the companies didn't even respond to me! It was demoralizing.
 
 I was freaking out. I needed to land a job. My first job was extremely important, and it would set me up for my entire career. I worried if I didn't get a job now, I would have to move back to Ohio after I graduated, probably closing the door on a prestigious finance job forever.
 
 ## My Big Break
 
-Finally, after a few weeks of anguish, I got a big break. One of the jobs I had applied to, a technical trading job at Allstate, asked me to interview! 
+Finally, after weeks of anguish, I got a big break. I had been asked to interview for one of the jobs I had applied to, a technical trading job at Allstate. 
 
-I was so excited. When I went to the interview, I met a guy named Mark. Mark was the one who had decided to interview me, and the hiring decision was ultimately his. 
+I was so excited. When I went to the interview, I met a guy named Mark. Mark was the one who had decided to interview me, and the hiring decision was ultimately his to make.
 
 Mark and I got along well, from what I remember. He had a relatively senior role at the company, but his schooling background had been similar to mine. He'd studied finance and engineering, and he was looking for somebody smart with a strong combination of finance and technical skills.
 
@@ -49,15 +49,15 @@ He must have seen some potential in me, because shortly after the interview he o
 
 So what's my point? I tell you your data science job search is not a numbers game, but then I tell you how I applied to over a hundred jobs to get a single offer. What gives?
 
-Here's the thing: I got this job because I had the combination of finance and technical skills that he was looking for. I never had a shot at the investment banking jobs, because I didn't have the right background. All of those applications were a waste.
+Here's the thing: I got this job because I had the exact combination of finance and technical skills that Mark was looking for. Most of the other jobs I applied for, I never had a shot of getting, because I didn't have the right background. All of those applications, and all of my effort in applying, were a waste.
 
 If I had instead focused on only applying to the technical finance jobs where I had a unique advantage, I'd have had a much higher success rate. 
 
-## Using an R blog post to get my first data science job
+## Getting My First Data Science Job with a Strategic R Blog Post
 
 My experience during that application process changed how I thought about job searches. Years later, when I was trying to break into data science from my finance job at BlackRock, I took a different approach.
 
-I knew I wanted to get into data science, but with no formal training and potentially hundreds of applicants for each position, I knew I needed to stand out. So I scoured job boards searching for **jobs where I knew my skills would give me an advantage**. 
+I knew I wanted to get into data science, but with no formal training and potentially hundreds of applicants for each position, I also knew I needed to stand out. So I scoured job boards searching for **jobs where I knew my skills would give me an advantage**. 
 
 I was very good at financial data manipulation, something the majority of data scientists know absolutely nothing about. 
 
@@ -69,7 +69,7 @@ Nope.
 
 I wrote a [detailed blog post](https://michaeltoth.me/analyzing-historical-default-rates-of-lending-club-notes.html) analyzing historical default rates for Lending Club loans. This was exactly the type of work I'd be expected to do at the company. I probably spent 10 hours doing the research and analysis and then writing that blog post. 
 
-What do you imagine happened? They called me in for an on-site interview. And I pretty much breezed through interviews at the company. The interviews were primarily assessing my cultural fit, not my data science skills, because I'd already proven to them I was capable!
+What do you imagine happened? They called me in for an on-site interview. And I pretty much breezed through it. The interview was primarily to assess my cultural fit, not my data science skills, because I'd already proven to them I was capable!
 
 ## Avoid the Spray and Pray Approach when Applying for Data Science Jobs
 
@@ -89,18 +89,6 @@ For your next data science job search, don't apply for a hundred jobs. Find 10 j
 
 -----
 
-Did you find this post useful? I frequently write tutorials like this one to help you learn new skills and improve your data science. If you want to be notified of new tutorials, sign up here!
+I will help you learn the specific skills you need to work more effectively, grow your income, and improve your career.
 
-
-
-Insert some footer shit here
-
-TODO: Add images
-
-
-
-
-
-
-
-
+[Sign up here to receive my best tips](http://eepurl.com/gmYioz)
