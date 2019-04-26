@@ -5,7 +5,7 @@ date: 2019-04-29 8:00
 category: R
 tags: R, Jobs, Data Science Job, Career Advice
 output: html_document
-status: hidden
+status: draft
 summary: Getting a data science job should not be a numbers game. Here's how to focus on your specific strengths to identify the job opportunities where you'll find the most success.
 ---
 
