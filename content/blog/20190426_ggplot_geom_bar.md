@@ -9,16 +9,7 @@ status: draft
 summary: A bar chart is one of the most powerful ways to communicate data with a broad audience. This detailed guide to the bar chart in R will teach you how to create a ggplot bar chart using the geom_bar function!
 ---
 
-```{r setup, echo=FALSE}
-knitr::opts_chunk$set(fig.width=5, fig.height=3, fig.align = 'center',
-                      error=FALSE, warning=FALSE, message=FALSE, dpi=300)
 
-# Inelegant solution to font dependency issues
-options(device = function(file, width, height) {
-  png(tempfile(), width = width, height = height)
-})
-
-```
 
 When it comes to data visualization, flashy graphs can be fun. Believe me, I'm as big a fan of [flashy](https://michaeltoth.me/how-to-create-a-bar-chart-race-in-r-mapping-united-states-city-population-1790-2010.html) [graphs](https://michaeltoth.me/mapping-legal-marijuana-states-and-medical-marijuana-states-1995-2019.html) as anybody. But if you're trying to convey information, especially to a broad audience, flashy isn't always the way to go. 
 
@@ -87,12 +78,15 @@ The mpg dataset contains 11 columns:
 
 `ggplot` uses geoms, or geometric objects, to form the basis of different types of graphs. Previously I have talked about [`geom_line` for line graphs](https://michaeltoth.me/a-detailed-guide-to-plotting-line-graphs-in-r-using-ggplot-geom_line.html) and [`geom_point` for scatter plots](https://michaeltoth.me/a-detailed-guide-to-the-ggplot-scatter-plot-in-r.html). Today I'll be focusing on `geom_bar`, which is used to create bar charts in R. 
 
-```{r simple_bar_chart}
+
+```r
 library(tidyverse)
 
 ggplot(mpg) +
     geom_bar(aes(x = class))
 ```
+
+<img src="/figures/20190426_ggplot_geom_bar/simple_bar_chart-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
 Here we are starting with the simplest possible `ggplot` bar chart we can create using `geom_bar`. Let's review this in more detail:
 
@@ -110,10 +104,13 @@ And that's it, we have our bar chart! We see that SUVs are the most prevalent in
 
 Expanding on this example, let's change the colors of our bar chart!
 
-```{r fill}
+
+```r
 ggplot(mpg) +
     geom_bar(aes(x = class), fill = 'blue')
 ```
+
+<img src="/figures/20190426_ggplot_geom_bar/fill-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
 You'll note that this `geom_bar` call is identical to the one before, except that we've added the modifier `fill = 'blue'` to to end of the line. Experiment a bit with different colors to see how this works on your machine. You can use most color names you can think of, or you can use specific hex colors codes to get more granular.
 
@@ -129,10 +126,13 @@ This distinction between `color` and `fill` gets a bit more complex, so stick wi
 
 Now, let's try something a little different. Compare the `ggplot` code below to the code we just executed above. There are 2 differences. See if you can find them and guess what will happen, then scroll down to take a look at the result. If you've read my previous `ggplot` guides, this bit should look familiar!
 
-```{r fill_aes, fig.width=6}
+
+```r
 ggplot(mpg) +
     geom_bar(aes(x = class, fill = drv))
 ```
+
+<img src="/figures/20190426_ggplot_geom_bar/fill_aes-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
 This graph shows the same data as before, but now instead of showing solid-colored bars, we now see that the bars are stacked with 3 different colors! The red portion corresponds to 4-wheel drive cars, the green to front-wheel drive cars, and the blue to rear-wheel drive cars. Did you catch the 2 changes we used to change the graph? They were:
 
@@ -157,11 +157,14 @@ For a given `class` of car, our stacked bar chart makes it easy to see how many 
 
 The main flaw of stacked bar charts is that they become harder to read the more segments each bar has, especially when trying to make comparisons across the x-axis (in our case, across car `class`). To illustrate, let's take a look at this next example: 
 
-```{r stacked_bar, fig.width=6}
+
+```r
 # Note we convert the cyl variable to a factor to fill properly
 ggplot(mpg) + 
     geom_bar(aes(x = class, fill = factor(cyl)))
 ```
+
+<img src="/figures/20190426_ggplot_geom_bar/stacked_bar-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
 As you can see, even with four segments it starts to become difficult to make comparisons between the different categories on the x-axis. For example, are there more 6-cylinder minivans or 6-cylinder pickups in our dataset? What about 5-cylinder compacts vs. 5-cylinder subcompacts? With stacked bars, these types of comparisons become challenging. **My recommendation is to generally avoid stacked bar charts with more than 3 segments**.
 
@@ -169,11 +172,14 @@ As you can see, even with four segments it starts to become difficult to make co
 
 Instead of stacked bars, we can use side-by-side (dodged) bar charts. In ggplot, this is accomplished by using the `position = position_dodge()` argument as follows:
 
-```{r dodged_bar, fig.width=6}
+
+```r
 # Note we convert the cyl variable to a factor here in order to fill by cylinder
 ggplot(mpg) + 
     geom_bar(aes(x = class, fill = factor(cyl)), position = position_dodge(preserve = 'single'))
 ```
+
+<img src="/figures/20190426_ggplot_geom_bar/dodged_bar-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
 Now, the different segments for each class are placed side-by-side instead of stacked on top of each other. 
 
@@ -191,13 +197,16 @@ Up to now, all of the bar charts we've reviewed have scaled the height of the ba
 What if we don't want the height of our bars to be based on count? What if we already have a column in our dataset that we want to be used as the y-axis height? Let's say we wanted to graph the average highway miles per gallon by `class` of car, for example. How can we do that in ggplot? 
 There are two ways we can do this, and I'll be reviewing them both. To start, I'll introduce `stat = 'identity'`:
 
-```{r stat_identity}
+
+```r
 # Use dplyr to calculate the average hwy_mpg by class
 by_hwy_mpg <- mpg %>% group_by(class) %>% summarise(hwy_mpg = mean(hwy))
 
 ggplot(by_hwy_mpg) + 
     geom_bar(aes(x = class, y = hwy_mpg), stat = 'identity')
 ```
+
+<img src="/figures/20190426_ggplot_geom_bar/stat_identity-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
 Now we see a graph by `class` of car where the y-axis represents the average highway miles per gallon of each `class.` How does this work, and how is it different from what we had before?
 
@@ -220,13 +229,16 @@ If this is confusing, that's okay. For now, all you need to remember is that if 
 
 I'll be honest, this was highly confusing for me for a long time. I hope this guidance helps to clear things up for you, so you don't have to suffer the same confusion that I did. But if you have a hard time remembering this distinction, `ggplot` also has a handy function that does this work for you. Instead of using `geom_bar` with `stat = 'identity'`, you can simply use the `geom_col` function to get the same result. Let's see:
 
-```{r geom_col}
+
+```r
 # Use dplyr to calculate the average hwy_mpg by class
 by_hwy_mpg <- mpg %>% group_by(class) %>% summarise(hwy_mpg = mean(hwy))
 
 ggplot(by_hwy_mpg) + 
     geom_col(aes(x = class, y = hwy_mpg))
 ```
+
+<img src="/figures/20190426_ggplot_geom_bar/geom_col-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
 You'll notice the result is the same as the graph we made above, but we've replaced `geom_bar` with `geom_col` and removed `stat = 'identity'`. `geom_col` is the same as `geom_bar` with `stat = 'identity'`, so you can use whichever you prefer or find easier to understand. For me, I've gotten used to `geom_bar`, so I prefer to use that, but you can do whichever you like! 
 
@@ -236,19 +248,25 @@ You'll notice the result is the same as the graph we made above, but we've repla
 
 Above, we showed how you could change the color of bars in `ggplot` using the `fill` option. I mentioned that `color` is used for line graphs and scatter plots, but that we use `fill` for bars because we are filling the inside of the bar with color. That said, `color` does still work here, though it affects only the outline of the graph in question. Take a look:
 
-```{r color}
+
+```r
 ggplot(mpg) +
     geom_bar(aes(x = class), color = 'blue')
 ```
+
+<img src="/figures/20190426_ggplot_geom_bar/color-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
 This created graphs with bars filled with the standard gray, but outlined in blue. That outline is what `color` affects for bar charts in ggplot!
 
 I personally only use `color` for one specific thing: modifying the outline of a bar chart where I'm already using `fill` to create a better looking graph with a little extra pop. The standard `fill` is fine for most purposes, but you can step things up a bit with a carefully selected `color` outline:
 
-```{r color_and_fill}
+
+```r
 ggplot(mpg) +
     geom_bar(aes(x = class), fill = '#003366', color = '#add8e6')
 ```
+
+<img src="/figures/20190426_ggplot_geom_bar/color_and_fill-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
 It's subtle, but this graph uses a darker navy blue for the fill of the bars and a lighter blue for the outline that makes the bars pop a little bit. 
 
@@ -321,10 +339,13 @@ Whenever you see this error about object not found, be sure to check that you're
 
 On the other hand, if we try including a specific parameter value (for example, `fill = 'blue'`) inside of the `aes()` mapping, the error is a bit less obvious. Take a look:
 
-```{r fill_blue_aes, fig.width=6}
+
+```r
 ggplot(mpg) + 
     geom_bar(aes(x = class, fill = 'blue'))
 ```
+
+<img src="/figures/20190426_ggplot_geom_bar/fill_blue_aes-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
 In this case, `ggplot` actually does produce a bar chart, but it's not what we intended. 
 
