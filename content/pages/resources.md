@@ -61,9 +61,6 @@ As we all know, job searching can be a stressful experience. Luckily, in the las
 
 In my most recent job search, I worked almost exclusively through these companies to find interesting opportunities. Two that I have used and recommend:
 
-Hired (1337!) https://hired.com/x/1ncvo
-Indeed Prime (https://prime.indeed.com/refer/c-0bvHnZV?sid=primeref&kw=none_cceb1d7792c7cdf4)
-
 <div>
     <ul id="image-list">
         <li class="image-list-element">
