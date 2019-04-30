@@ -50,6 +50,39 @@ Before digging into these awesome resources, an important disclosure:
 
 Some of the links below are affiliate links, which means that if you choose to make a purchase, I will earn a commission. This commission comes at no extra cost to you. I have experience with all of these companies and products, and I recommend them because they are helpful and useful, not because of the small commissions I make if you purchase something. Please do not spend any money on these products unless you feel you need them or that they will help you achieve your goals.
 
+## Companies to Help You Job Search
+
+As we all know, job searching can be a stressful experience. Luckily, in the last few years, there have been a whole bunch of new companies that help make this process easier for job seekers. Here's how it works:
+
+1. You fill out a quick application with your background and the types of jobs you're looking for
+2. If you're a good fit for the program, they will forward your details to companies looking for your talents. 
+3. The companies apply to **you**, giving you information on the role and salary expectation. 
+4. You decide which companies you'd like to interview with! 
+
+In my most recent job search, I worked almost exclusively through these companies to find interesting opportunities. Two that I have used and recommend:
+
+Hired (1337!) https://hired.com/x/1ncvo
+Indeed Prime (https://prime.indeed.com/refer/c-0bvHnZV?sid=primeref&kw=none_cceb1d7792c7cdf4)
+
+<div>
+    <ul id="image-list">
+        <li class="image-list-element">
+            <a href='https://hired.com/x/1ncvo' target="_blank" class="list-link">
+                <img border="0" src="../images/resources/hired.png">
+                <h3>Hired</h3> 
+                <p>Hired is a free service that makes your job application process easy. Their value proposition is in getting **leading companies to apply to you**. Then, you get to choose which interviews you'd like to pursue. I had a great experience with Hired during my last job search, and it seems their data science and analytics offering has only improved since then. They help you with coaching, interview prep, and job market expertise along the way, so you know you're getting the best deal from your future employer. If you're in the market, you definitely want to check out Hired!</p>
+            </a>
+        </li>
+        <li class="image-list-element">
+            <a href='https://prime.indeed.com/refer/c-0bvHnZV?sid=primeref&kw=none_cceb1d7792c7cdf4' target="_blank" class="list-link">
+                <img border="0" src="../images/resources/indeed-prime.png">
+                <h3>Indeed Prime</h3> 
+                <p>Indeed Prime is another free service that aims to make your job search as painless as possible. You fill out a 5-minute application, and they get to work finding great jobs that match your criteria. They help you prepare for interviews with a dedicated career coach, and they also provide negotiating tips to help you maximize your salary. Indeed Prime has a huge network of companies, and they can help you find positions in over 90 cities throughout the United States, Canada, and the U.K. If you're looking to secure a high-paying and exciting position, Indeed Prime is a great place to start!</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
 ## Start a Blog To Supercharge Your Career
 
 Creating my blog is, by far, the most profitable thing I have ever done for my career. I got my first data science job because of this blog. I'm able to help thousands of other people on their journeys to learn R and improve their careers each month because of this blog. 
