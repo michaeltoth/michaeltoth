@@ -1,11 +1,10 @@
 ---
 title: Detailed Guide to the Bar Chart in R with ggplot
 author: Michael Toth
-date: 2019-05-01 8:05
+date: 2019-05-01 5:40
 category: R
 tags: R, ggplot, geom_bar, bar chart, bar graph, barplot
 output: html_document
-status: draft
 summary: A bar chart is one of the most powerful ways to communicate data with a broad audience. This detailed guide to the bar chart in R will teach you how to create a ggplot bar chart using the geom_bar function!
 ---
 
