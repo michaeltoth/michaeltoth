@@ -1,7 +1,7 @@
 ---
 title: Detailed Guide to the Bar Chart in R with ggplot
 author: Michael Toth
-date: 2019-05-01 5:40
+date: 2019-05-01 5:40 
 category: R
 tags: R, ggplot, geom_bar, bar chart, bar graph, barplot
 output: html_document
