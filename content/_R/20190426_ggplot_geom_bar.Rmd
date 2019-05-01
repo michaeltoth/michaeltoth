@@ -274,7 +274,6 @@ The main aesthetic mappings for a ggplot bar graph include:
 * `y`: Map a variable to a position on the y-axis
 * `fill`: Map a variable to a bar color
 * `color`: Map a variable to a bar outline color
-* `group`: Map a variable to a group (each variable on a separate bar)
 * `linetype`: Map a variable to a bar outline linetype
 * `alpha`: Map a variable to a bar transparency
 

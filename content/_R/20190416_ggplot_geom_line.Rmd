@@ -163,7 +163,7 @@ The main aesthetic mappings for `ggplot + geom_line()` include:
 * `y`: Map a variable to a position on the y-axis
 * `color`: Map a variable to a line color
 * `linetype`: Map a variable to a linetype
-* `group`: Map a variable to a group (each variable on a separate line)
+* `group`: Map a variable to a group (each group on a separate line)
 * `size`: Map a variable to a line size
 * `alpha`: Map a variable to a line transparency
 
@@ -236,7 +236,7 @@ When I was getting started with R and ggplot, the distinction between aesthetic 
 
 ##### Trying to include aesthetic mappings *outside* your `aes()` call
 
-If you're trying to map the Tree variable to linetype, you should include `linetype == tree` within the `aes()` of your `geom_line` call. What happens if you accidentally include it outside, and instead run `ggplot(Orange) + geom_line(aes(x = age, y = circumference), linetype = Tree)`? You'll get an error message that looks like this:
+If you're trying to map the Tree variable to linetype, you should include `linetype = tree` within the `aes()` of your `geom_line` call. What happens if you accidentally include it outside, and instead run `ggplot(Orange) + geom_line(aes(x = age, y = circumference), linetype = Tree)`? You'll get an error message that looks like this:
 
 <center>
 ![ggplot geom_line error message](../images/20190417_ggplot_geom_line/error_1.png){width=600px}
