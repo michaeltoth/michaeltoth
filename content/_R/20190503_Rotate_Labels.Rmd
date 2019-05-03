@@ -5,7 +5,6 @@ date: 2019-05-03 6:00
 category: R
 tags: R, axis, tips, ggplot
 output: html_document
-status: draft
 summary: We're all attracted to simple and visually appealing graphs. Unfortunately, we often don't put in the necessary effort to make sure our own graphs live up to their potential. In this guide, I'll show you how you can quickly and easily improve the readability of your ggplot graphs with a simple change to your axis titles!
 ---
 
