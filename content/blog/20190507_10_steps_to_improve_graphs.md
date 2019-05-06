@@ -46,12 +46,12 @@ Your graphs should answer an important question that your audience has. “How h
 
 #### 3. Decide which type of graph to use
 
-The graph you use will depend on the data and the question you are answering. Common choices:
+The graph you use will depend on the data and the question you are answering.
 
-* Line Graph: Use line graphs to track trends over time or show the relationship between two variables.
-* Bar Charts: Use bar charts to compare quantitative data across multiple categories.
-* Scatter Plots: Use scatter plots to assess the relationship between two variables.
-* Pie Charts: Use pie charts to show parts of a whole. I personally do not use pie charts, and I advise you to be very careful with them. If you must use them, limit the number of categories, as more than 3 or 4 makes them unreadable.
+* **[Line Graph](https://michaeltoth.me/a-detailed-guide-to-plotting-line-graphs-in-r-using-ggplot-geom_line.html)**: Use line graphs to track trends over time or show the relationship between two variables.
+* **[Bar Charts](https://michaeltoth.me/detailed-guide-to-the-bar-chart-in-r-with-ggplot.html)**: Use bar charts to compare quantitative data across multiple categories.
+* **[Scatter Plots](https://michaeltoth.me/a-detailed-guide-to-the-ggplot-scatter-plot-in-r.html)**: Use scatter plots to assess the relationship between two variables.
+* **Pie Charts**: Use pie charts to show parts of a whole. I personally do not use pie charts, and I advise you to be very careful with them. If you must use them, limit the number of categories, as more than 3 or 4 makes them unreadable.
 
 #### 4. Decide how to handle outliers
 
@@ -79,7 +79,7 @@ Color is an important and often-neglected aspect of graphs. For single-color gra
 
 #### 8. Make all of your axis titles and labels horizontal
 
-All of the axis titles and labels in your graph should be horizontal. Horizontal labels greatly improve the readability and visual appeal of a graph. 
+All of the axis titles and labels in your graph should be horizontal. [Horizontal labels](https://michaeltoth.me/one-step-to-quickly-improve-the-readability-and-visual-appeal-of-ggplot-graphs.html) greatly improve the readability and visual appeal of a graph. 
 
 #### 9. Adjust your titles, labels, and legend text
 
@@ -87,7 +87,7 @@ Give your graph a compelling title, and add descriptive and well formatted names
 
 #### BONUS: Add your company logo and branding
 
-If you’re sharing this graph with clients or the public, adding your company logo and branding elements can help your graph to stand out and to build credibility for your organization. This is great for you, because it will help you to grow your own influence and visibility within the company. Read my guide on this subject for more details on how to implement this tip.
+If you’re sharing this graph with clients or the public, [adding your company logo and branding](https://michaeltoth.me/you-need-to-start-branding-your-graphs-heres-how-with-ggplot.html) elements can help your graph to stand out and to build credibility for your organization. This is great for you, because it will help you to grow your own influence and visibility within the company. Read my guide on this subject for more details on how to implement this tip.
 
 ## Exporting Your Graph
 
