@@ -1,35 +1,66 @@
 ---
 title: 10 Steps to Better Graphs in R
 author: Michael Toth
-date: 2019-05-07 6:00
+date: 2019-05-07 10:30
 category: R
-tags: R, graphs
+tags: R, graph, ggplot
 output: html_document
-summary: 
+summary: Over the last 5 years, I have created **a LOT** of graphs. And let me tell you, they haven't all been pretty. But with each new graph that I've created, I've improved my knowledge of what works and what doesn't. In this post, I share the 10-step graphing checklist I've developed to increase my impact and ability to drive change in an organization.
 status: draft
 ---
 
-One of the tricky things with getting graphs right is that you use graphs for a variety of purposes. I generally will start graphing exploratory data to get a sense for what's going on in an underlying dataset. This is mostly for myself, so I can get a deeper understanding of the underlying data.
+Over the last 5 years, I have created **a LOT** of graphs. And let me tell you, they haven't all been pretty. But with each new graph that I've created, I've improved my knowledge of what works and what doesn't. 
 
-The problem is when you simply use those exploratory graphs in a final report, website, or presentation without giving further thought to what you're showing.
+And I've used that knowledge to develop a set of best practices that I follow every time I'm working on a new project that involves communicating results or information with graphs. 
 
-Think about it this way.
+You see, when I'm making a graph, I'm not doing it just to explore some data or show something "interesting". No. I want my graphs to speak to my audience and help them to *understand* and *take action* based on what they learn. 
 
-You just spent days, weeks, or sometimes months working on a particular data analysis project. You've found some interesting results, and now you're ready to share those results, either with your team, or perhaps with your company's clients.
+A good data scientist needs to be able to not only analyze data, but also to convey the insights hidden in that data in a way that convinces people to take appropriate action. 
 
-You're trying to convey the value of the weeks worth of work you just put in. Why would you not put in at least a bit of time to make sure your graphs convey the information?
+If you can use your data analysis skills to consistently drive change in your organization, you will quickly find yourself on a path toward promotion, increased responsibility, and greater control over your own work. 
 
-You're often so deep in the weeds of your own analysis that things you think are simple and obvious are anything but to your end reader. 
+In my own experience, learning to graph effectively was the single biggest thing that helped me increase my impact and ability to drive change at work. That's why I think it's so important for you to learn to graph effectively, and that's why I'm sharing this checklist with you today.
 
-I once spent a few months working on a project to predict prepayment and default rates on loan portfolios. This was going to be a big win to our clients, and blah. 
+This is the exact checklist I go through when I'm working on graphs for big consulting projects with my clients. I keep a printed copy on my desk and I refer to it every time I'm working on a new graph. It helps me, and I think it will help you too. Be sure to get a copy of the checklist for yourself so you'll always have it handy when you need it!
 
-After that, I knew I needed to do something different. 
+[Get Your Free 10-Step ggplot Graphing Checklist](https://mailchi.mp/114dc86f2f2b/graphing-checklist)
 
-So I spent a lot of time researching and gathering opinions on data visualization, communication, etc. 
 
-Here's what I came up with. It's my 10-step checklist to ensure that any graphs I produce are compelling and get the story across that I'm trying to tell.
+## Why Do You Need a Checklist
 
-Are you ready? Let's go!
+Graphs are a versatile tool that can be used for a variety of different goals. That's one of the reasons why I think learning to graph effectively is one of the highest priorities for data scientists. 
+
+But I also think that leads to a lot of problems with graphs. You see, you can use graphs for exploratory data analysis, and you can also use graphs for presentation and sharing results. The problem that I see **ALL THE TIME** is that people try to use the same graphs for both of these things. Ahhh! 
+
+Look, I've been there. It's tempting and easy to throw a few quick graphs together and call it a day. 
+
+I used to work in finance, and I was once tasked with building a model to predict of how likely borrowers were to default on loans they had taken out. 
+
+It was a challenging problem, and I spent around 6 weeks creating a sophisticated model that predicted defaults based on all kinds of data about the borrower's income level, where they lived, how big their loan was, and what their interest rate was.
+
+I was pretty pleased that the model I created worked really well! I knew our clients would find a lot of value in this model once we got it implemented into our platform.
+
+Before that, I needed to summarize my results and share them with the rest of the company. At the time, I didn't see this as an opportunity to advocate for my work and its benefits to our clients. Instead, I saw it as an annoying obligation that I had to do on top of my already extensive analysis.
+
+I knew my analysis was good and that this change was valuable. I was sure other people understood that as well. 
+
+So I threw some graphs together, gave a quick presentation on the topic to a room full of glazed-over eyes, and went back to my desk.
+
+It took weeks for us to build this into the platform, when it could have been done in a matter of days if there was sufficient motivation.
+
+Whose fault was that? At the time, it was easy for me to blame the engineering team for the slow implementation. But the reality is, **it was my fault!**
+
+Everybody else is busy with their own work, and for the most part, they don't really know what it is you do all day. You're often so deep in the weeds of your own analysis that things you think are simple and obvious aren't even on the minds of everybody else. That's why it's important to treat every presentation and every graph you share as an opportunity to educate others and inspire them to move forward with an action.
+
+I'd love to say that I immediately changed my presentation and graphing style after that experience, but I didn't. It took me years to develop the knowledge and skills to do this effectively.
+
+But it doesn't have to take years! I'm here to help you learn *today* how to effectively use graphs to communicate ideas and drive change. 
+
+If you implement these ideas consistently, you **will** see improvements in the impact of your work and your influence in the organization.
+
+Now, let's get into the checklist. And remember, if you want to keep a copy of this for yourself so you'll always have it to refer back to, you can get that here:
+
+[Get Your Free 10-Step Checklist to Graphing for Impact](https://mailchi.mp/114dc86f2f2b/graphing-checklist)
 
 ## Before you graph
 
@@ -94,3 +125,11 @@ If you’re sharing this graph with clients or the public, [adding your company 
 #### 10. Save your graph in a readable high-resolution format
 
 Think about how your graph is going to be read. Will it be online, printed, or in a slide for a presentation? Each format may require different adjustments to text and graph sizing to be readable. Be sure to test for yourself to ensure you can read your graph in its final format. This will avoid frustrating reworks or--even worse--sharing an unreadable graph! Use the ggsave function to save your graph and modify the resolution. Then, adjust sizes until you’re satisfied with the final result.
+
+## Conclusion
+
+Some of these tips may have been obvious, and others may have seemed like revelations. The important thing is to think through these steps and apply them *consistently* with every graph you produce. I promise you that if you incorporate this checklist into your workflow, you're going to see a big change in how people respond to your analysis at work.
+
+Remember to get a copy of this graphing checklist so you can be sure to go through it every time!
+
+[Get Your Free 10-Step Checklist to Graphing for Impact](https://mailchi.mp/114dc86f2f2b/graphing-checklist)
