@@ -1,12 +1,11 @@
 ---
 title: 10 Steps to Better Graphs in R
 author: Michael Toth
-date: 2019-05-07 10:30
+date: 2019-05-07 10:44
 category: R
 tags: R, graph, ggplot
 output: html_document
 summary: Over the last 5 years, I have created **a LOT** of graphs. And let me tell you, they haven't all been pretty. But with each new graph that I've created, I've improved my knowledge of what works and what doesn't. In this post, I share the 10-step graphing checklist I've developed to increase my impact and ability to drive change in an organization.
-status: draft
 ---
 
 Over the last 5 years, I have created **a LOT** of graphs. And let me tell you, they haven't all been pretty. But with each new graph that I've created, I've improved my knowledge of what works and what doesn't. 
