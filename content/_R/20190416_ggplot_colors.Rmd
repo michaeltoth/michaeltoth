@@ -1,0 +1,216 @@
+---
+title: A Detailed Guide to ggplot colors
+author: Michael Toth
+date: 2019-05-14 10:00
+category: R
+tags: R, ggplot, colors
+output: html_document
+status: draft
+summary: summary goes here
+---
+
+```{r setup, echo=FALSE}
+knitr::opts_chunk$set(fig.width=8, fig.height=6, fig.align = 'center',
+                      error=FALSE, warning=FALSE, message=FALSE, dpi=300)
+
+# Inelegant solution to font dependency issues
+options(device = function(file, width, height) {
+  png(tempfile(), width = width, height = height)
+})
+
+```
+
+Once you've figured out how to create the standard [bar charts](https://michaeltoth.me/detailed-guide-to-the-bar-chart-in-r-with-ggplot.html), [line graphs](https://michaeltoth.me/a-detailed-guide-to-plotting-line-graphs-in-r-using-ggplot-geom_line.html), and [scatter plots](https://michaeltoth.me/a-detailed-guide-to-the-ggplot-scatter-plot-in-r.html) in ggplot, the next step to really elevate your graphs is to begin working with color.
+
+Strategic use of color can really help your graphs to stand out and [make an impact](https://michaeltoth.me/10-steps-to-better-graphs-in-r.html).
+
+In this guide, you'll learn how to incorporate your own custom color palettes into your graphs by modifying the base ggplot colors.
+
+**By the end of this tutorial, you’ll know how to:**
+
+* Change the color of all items in a graph to a static color of your choice
+* Differentiate between setting a static color and mapping a variable in your data to a color palette so that each color represents a different value in your data
+* Customize your own color palettes using the `scale_color_gradient`, `scale_fill_gradient`, `scale_color_gradient2`, and `scale_fill_gradient2` functions for continuous data
+* Customize your own color palettes for categorical data using the `scale_color_manual` and `scale_fill_manual` functions
+
+## Introducing video tutorials!
+
+I'm also excited to try something new in this guide! I'll be adding video tutorials to accompany the content, so please let me know what you think about these and if you find them helpful. If they're helpful, I'd love to do more of this in the future!
+
+## Get my free workbook to master ggplot colors!
+
+Have you ever read a tutorial or guide, learned a bunch of interesting things, only to forget them shortly after you finish reading? 
+
+Me too. And it's really annoying!
+
+Unfortunately, our brains aren't good at remembering what we read. We need to think critically and be engaged in solving problems to learn information so it sticks.
+
+That's why I've created a free workbook to accompany this post. The workbook includes additional questions and exercises to help you engage with this material. 
+
+Get your free ggplot colors workbook here
+
+## A high-level overview of ggplot colors
+
+By default, ggplot graphs use a black color for lines and points and a gray color for shapes like the rectangles in bar graphs.
+
+Sometimes this is fine, but often you'll want to modify these colors to something different. 
+
+Depending on the type of graph you're working with, there are two primary attributes that affect the colors in a graph. 
+
+You use the `color` attribute to change the *outline* of a shape and you use the `fill` attribute to fill the *inside* of a shape. What does this mean?
+
+Well, points and lines don't have any inside to fill, so we use the `color` attribute to change the color of any points and lines in your graph:
+
+```{r color}
+library(tidyverse)
+
+ggplot(iris) + 
+    geom_point(aes(x = Sepal.Width, y = Sepal.Length), color = 'red')
+```
+
+In contrast, bars and other 2-dimensional shapes *do* have an inside to fill, so you will be using the `fill` attribute to change the color of these items in your graph:
+
+```{r fill}
+ggplot(mpg) +
+    geom_bar(aes(x = class), fill = 'red')
+```
+
+Side note: technically you can also use the `color` attribute to change the outline of shapes like bars in a bar graph. I use this functionality very rarely, and for the sake of simplicity I will not go into this in further detail in this guide.
+
+Except for the difference in naming, `color` and `fill` operate very similarly in ggplot. As you'll see, the functions that exist for modifying ggplot colors all come in both `color` and `fill` varieties. But before we get to that, there's one other thing we need to touch on first.
+
+## Modifying ggplot colors: static color vs. color mapping
+
+<iframe align="middle" width="560" height="315" src="https://www.youtube.com/embed/c7Smep_qXfA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+The next distinction we need to make when discussing color in ggplot is whether we're talking about *setting a static color* for our entire graph or whether we're talking about *mapping a variable to a color*. 
+
+In the examples above, we used a static color (red) to modify all of the points and bars in the two graphs that we created. 
+
+It's often the case, however, that we want to use color to convey additional information in our graph. Usually, we do this by mapping a variable in our dataset to the `color` or `fill` aesthetic, which tells ggplot to use a different color for each level of that variable in the data. 
+
+Setting a static color is pretty straightforward, and you can use the two examples above as references for how to accomplish that. 
+
+In the rest of this guide, I'm going to show you how you can map variables in your data to colors in your graph. You'll learn about the different functions in ggplot to set your own color palettes and how they differ for continuous and categorical variables.
+
+## Working with Color Palettes for Continuous Data
+
+<iframe align="middle" width="560" height="315" src="https://www.youtube.com/embed/7cQqA5ibXj4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Let's start with a simple example of the default continuous color palette in ggplot. First, we'll generate some random data that we'll use for our graph.
+
+```{r generate_data}
+df <- data.frame(
+  x = runif(100), # 100 uniformly distributed random values
+  y = runif(100), # 100 uniformly distributed random values
+  z1 = rnorm(100), # 100 normally distributed random values
+  z2 = abs(rnorm(100)) # 100 normally distributed random values mapped to positive
+)
+```
+
+#### On sequential color scales and ggplot colors
+
+When we map a continuous variable to a color scale, we map the values for that variable to a color gradient. This is called a sequential color scale, because it maps data sequentially from one color to another color. You can see the default ggplot color gradient below. 
+
+<center>
+![Sequential color gradient from dark to light blue](../images/20190416_ggplot_colors/gradient_1.png){width=600px}
+</center>
+
+The minimum value will in your dataset will be mapped to the left (dark side) of this sequential color gradient, while the maximum value will be mapped to the right (light side) of this sequential color gradient.
+
+Essentially, you're stretching a number line across this gradient of colors. Then, for every value in your data, you find it on the number line, take the color at that location, and graph using that resulting color.
+
+Let's see how this works in practice. Using the random data we generated above, we'll graph a [scatter plot](https://michaeltoth.me/a-detailed-guide-to-the-ggplot-scatter-plot-in-r.html) of the x and y variables. To illustrate the color gradient, we'll map the z2 variable to the `color` aesthetic: 
+
+```{r default_continuous}
+# Default colour scale colours from light blue to dark blue
+g1 <- ggplot(df, aes(x, y)) +
+  geom_point(aes(color = z2))
+
+g1
+```
+
+Note the contrast between this syntax and the syntax before where we set a static color for our graph. Here, we aren't specifying the color to use, we're simply telling ggplot to map the `z2` variable to the color aesthetic by including the mapping `color = z2` within the `aes` function. 
+
+In the dataset that I created, the minimum value for the `z2` variable is `r min(df$z2)`, while the maximum value is `r max(df$z2)`. All values--and therefore all colors--fall between these minimum and maximum levels. 
+
+#### Modifying our ggplot colors using scale_color_gradient
+
+Now that you understand how ggplot can map a continuous variable to a sequential color gradient, let's go into more detail on how you can modify the specific colors used within that gradient. 
+
+Instead of the default blue gradient that ggplot uses, we can use any color gradient we want! To modify the colors used in this scale, we'll be using the `scale_color_gradient` function to modify our ggplot colors.
+
+Side note: if we were instead graphing bars or other fillable shapes, we would use the `scale_fill_gradient` function. For brevity, I won't be including an example of this function. It operates in exactly the same way as the `scale_color_gradient` function, so you can easily modify this code to work for filling graphs with color as well.
+
+Using the same graph from before, we simply add a call to the `scale_color_gradient` function to modify our color palette. Here, we can specify our own values for `low` and `high` to customize the gradient of colors in our graph. In this case, we'll be mapping low values to greenyellow and high values to forestgreen. 
+
+```{r scale_color_gradient}
+g1 + 
+  scale_color_gradient(low = 'greenyellow', high = 'forestgreen')
+```
+
+By modifying the values you're passing to the `scale_color_gradient` function, you can create a sequential color scale between any two colors! 
+
+#### On diverging gradient scales and ggplot colors
+
+Sequential color scales are great when you want to easily differentiate between low and high values in a dataset.
+
+Sometimes, however, that's not what you want. Sometimes you want to look at deviations from a certain baseline value, and you care about both positive and negative deviations. For this type of data, we use what's called a diverging color scale. 
+
+A diverging color scale creates a gradient between three different colors, allowing you to easily identify low, middle, and high values within your data. You can see an example of a diverging color scale below.
+
+<center>
+![Continuous color gradient from blue to red](../images/20190416_ggplot_colors/gradient_2.png){width=600px}
+</center>
+
+In this color scale, we see that blue is associated with values on the low end, white with values in the middle, and red with values on the high end. Among other things, this type of scale is often used when presenting United States presidential election results.
+
+Instead of the `scale_color_gradient` function that we used for a sequential color palette, we're now going to use the `scale_color_gradient2` to produce a diverging palette.
+
+Side note: Again, there is a similar function called `scale_fill_gradient2` that we would use if we were instead graphing bars or other fillable shapes. I won't be including an example of this function, but it operates in exactly the same way as the `scale_color_gradient2` function, so you can easily modify this code to work for filling graphs with color as well.
+
+As before, we tell the `scale_color_gradient2` function which colors to map to low and high values of our variable. In addition, we also specify a color to map the mid values to. As in the color scale we just reviewed, we'll use the blue-white-red color palette for this example:
+
+```{r}
+ggplot(df, aes(x, y)) +
+  geom_point(aes(colour = z1)) +
+  scale_color_gradient2(low = 'blue', mid = 'white', high = 'red')
+```
+
+While you can technically specify any 3 colors for a diverging color scale, the convention is to use a light color like white or light yellow in the middle and darker colors of different hues for both low and high values, like we've done here.
+
+## Working with Color Palettes for Categorical Data
+
+When working with continuous data, each value in your dataset was automatically mapped to a value on a 2-color sequential gradient or 3-color diverging gradient, as we just saw. The goal was to show a smooth transition between colors, highlighting low and high values or low, middle, and high values in the data.
+
+When working with categorical data, each distinct level in your dataset will be mapped to a distinct color in your graph. With categorical data, the goal is to have highly differentiated colors so that you can easily identify each category.
+
+There are built-in functions within ggplot to create these categorical color palettes. That said, I've always preferred the control I get from generating my own, and that's what I'm going to show you how to do here.
+
+#### My favorite tool for building your color palette: Color Picker for Data
+
+<iframe align="middle" width="560" height="315" src="https://www.youtube.com/embed/QBROdDKzQoY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+My favorite way of generating beautiful color palettes is to use Tristen Brown's tool [Color Picker for Data](http://tristen.ca/hcl-picker/#/hlc/6/1.05/603548/D4E966). It offers an intuitive visual interface to build and export a color palette that you can use directly within ggplot.
+
+#### Working with Manual ggplot Color Scales for Categorical Data
+
+<iframe align="middle" width="560" height="315" src="https://www.youtube.com/embed/h8dn6nbCznQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Once you have your color palette, you can use the `scale_color_manual` function to map the levels in your dataset to different colors in your generated color palette.
+
+Side note: Can you guess? Yes, again, there is a similar function called `scale_fill_manual` that we would use if we were instead graphing bars or other fillable shapes. I won't be including an example of this function, but it operates in exactly the same way as the `scale_color_manual` function, so you can easily modify this code to work for filling graphs with color as well.
+
+For this example, we'll be working with the mtcars dataset. We're going to create a scatter plot of weight and miles per gallon. Then, we'll use the color aesthetic to map 4-, 6-, and 8-cylinder engines each to a different color from the color palette we've just chosen.
+
+Here, we start by creating a vector that maps the different levels in our data, in this case "4", "6", and "8", to different colors. 
+
+We then use the `scale_color_manual` function and specify the mapping by passing our `colors` vector to the `values` argument of `scale_color_manual`. It will then go through each entry in the `cyl` column, mapping it to the relevant color in our `colors` vector.
+
+```{r scale_color_manual}
+colors <- c("4" = "#2D9AA5", "6" = "#D4E966", "8" = "#603548")
+
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point(aes(colour = factor(cyl))) +
+  scale_color_manual(values = colors)
+```
