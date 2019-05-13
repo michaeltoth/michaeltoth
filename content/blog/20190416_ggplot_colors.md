@@ -38,7 +38,7 @@ Unfortunately, our brains aren't good at remembering what we read. We need to th
 
 That's why I've created a free workbook to accompany this post. The workbook is an R file that includes additional questions and exercises to help you engage with this material. 
 
-Get your free ggplot colors workbook here
+[Get your free workbook to master working with colors in ggplot](https://mailchi.mp/2c40b4d25a09/ggplot-colors)
 
 ## A high-level overview of ggplot colors
 
@@ -136,7 +136,7 @@ g1
 
 Note the contrast between this syntax and the syntax before where we set a static color for our graph. Here, we aren't specifying the color to use, we're simply telling ggplot to map the `z2` variable to the color aesthetic by including the mapping `color = z2` within the `aes` function. 
 
-In the dataset that I created, the minimum value for the `z2` variable is 0.0041569, while the maximum value is 3.0068217. All values--and therefore all colors--fall between these minimum and maximum levels. 
+In the dataset that I created, the minimum value for the `z2` variable is 0.0087342, while the maximum value is 2.2301045. All values--and therefore all colors--fall between these minimum and maximum levels. 
 
 #### Modifying our ggplot colors for continuous data using scale_color_gradient
 
@@ -267,4 +267,4 @@ Right now, you should have a pretty good understanding of how you can work with 
 
 That's why I've created a free workbook that you can use to apply what you've learned in this guide. The workbook is an R file that includes additional questions and exercises to help you engage with this material. 
 
-Get your free ggplot colors workbook here
+[Get your free workbook to master working with colors in ggplot](https://mailchi.mp/2c40b4d25a09/ggplot-colors)
