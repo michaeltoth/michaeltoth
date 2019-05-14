@@ -5,7 +5,6 @@ date: 2019-05-14 10:00
 category: R
 tags: R, ggplot, colors
 output: html_document
-status: draft
 summary: In this guide, you'll learn how to incorporate your own custom color palettes into your ggplot graphs. You'll be able to differentiate between setting a static color and mapping a variable in your data to a color palette so that each color represents a different level of the variable. And you'll learn specifically how to customize color palettes for both continuous and categorical data in ggplot using the built-in ggplot color functions.
 ---
 
